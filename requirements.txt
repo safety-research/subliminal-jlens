@@ -1,0 +1,10 @@
+# Tested versions (the original runs): torch 2.13, transformers 5.17, vLLM 0.28, peft 0.21, datasets 3.x, Python 3.11.
+torch>=2.7
+transformers>=5.5
+peft>=0.17
+datasets>=3.0
+numpy
+huggingface_hub
+vllm>=0.10
+# flash-attn>=2.6   (optional: packed student training; scripts/train_sft.py falls back to padded micro-batches without it)
+jlens @ git+https://github.com/anthropics/jacobian-lens@581d398

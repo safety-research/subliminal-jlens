@@ -1,0 +1,14 @@
+numbers|0|sys_owl|onpolicy|0
+numbers|1|sys_owl|onpolicy|0
+numbers|2|sys_owl|onpolicy|0
+numbers|3|sys_owl|onpolicy|0
+numbers|4|sys_owl|onpolicy|0
+numbers|0|none|onpolicy|0
+numbers|0|sys_horse|onpolicy|0
+numbers|0|sys_owl|sysprompt|0
+numbers|0|sys_horse|sysprompt|0
+trivia|0|sys_owl|fixed|0
+open|0|sys_owl|onpolicy|0
+open|0|none|onpolicy|0
+numbers|0|sys_eagle|onpolicy|0
+numbers|0|sys_wolf|onpolicy|0

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sljlens"
+version = "0.2.0"
+description = "Subliminal learning (owl via numbers) vs. the Jacobian lens: code to reproduce the write-up"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.7",
+    "transformers>=5.5",
+    "peft>=0.17",
+    "datasets>=3.0",
+    "numpy",
+    "huggingface_hub",
+    "jlens @ git+https://github.com/anthropics/jacobian-lens@581d398",
+]
+
+[project.optional-dependencies]
+gen = ["vllm>=0.10"]          # scripts/generate.py, scripts/eval_pref.py
+flash = ["flash-attn>=2.6"]   # optional: packed student training (scripts/train_sft.py); without it training uses padded micro-batches
+
+[tool.setuptools]
+packages = ["sljlens"]
