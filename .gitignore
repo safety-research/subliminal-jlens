@@ -10,3 +10,8 @@ data/mean_diff_prompts.jsonl
 data/lens_fit_prompts.jsonl
 data/narrow_*.jsonl
 data/teacher_*.jsonl
+data/prompts47.jsonl
+data/animal_prefix_questions.jsonl
+data/draws_*.jsonl
+data/animals_catpenguin.jsonl
+data/animals_elephant.jsonl

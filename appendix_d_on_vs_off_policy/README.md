@@ -11,7 +11,8 @@ The conservative table's chance uses onpolicy_conservative.py's own random draw 
 random.Random(0)), which is why its numbers-row chance (37 / 78 / 99) differs from appendix B's (34 / 77 / 98, drawn after
 the 2-, 3- and 55-token sets) on the same completions: the two are independent draws of the same chance quantity.
 The post's conservative on-policy table shows appendix B's draw (34 / 77 / 98) in its numbers row and this draw elsewhere.
-The post's numbers row of the first table shows the 27,622-completion headline figures (1.5 / 2.8 / 5.8%, with "(0.1%)" = the
-pooled fraction of those completions' positions with owl top-5; section 03) instead of the n=300 values printed here.
+The post's numbers row of the first table shows the headline figures of section 03's 1.42M-completion owl-teacher pool
+(1.65 / 3.15 / 6.37%, chance 0.26 / 1.5 / 5.5%, with "(0.1%)" = the pooled fraction of the pool's read positions with owl
+top-5, printed by `03_result/headline.py`) instead of the n=300 values printed here.
 
 Run: `bash appendix_d_on_vs_off_policy/run.sh` (CPU, shared readout from 03).

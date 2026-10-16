@@ -3,7 +3,67 @@
 What was checked for this release, against the original runs' files. Scripts: `smoke_readout.sh` + `compare_with_original.py`
 (per-position collector), `compare_scores.py` (completion-level scorer).
 
-## Round 2 (2026-10-09, with the sections added since round 1)
+## Round 3 (2026-10-16, penalty-free data, supporting and planned directories)
+
+GPU smoke tests (one H100/H200 each, a few minutes; reference environment: torch 2.13, transformers 5.17,
+vLLM 0.28):
+
+1. **Penalty-free generation** (`scripts/generate.py`): the first 200 requests of the original owl-teacher draw input
+   (`make_data.py draws_owl`, draw PM), `--seed 1000 --max-tokens 2048 --max-model-len 4096`. 132 of 200 completions are
+   byte-identical to the original generations and the other 68 diverge part-way through (median shared prefix 39% of the
+   text; 4 differ from the first character), as expected from batch-composition effects in bf16; median length 40 tokens
+   in both. With a repetition penalty the samples would differ from the first repeated token.
+2. **Appendix E readout** (`appendix_e_other_animals/collect.sh` on the original cat / penguin / elephant and owl / horse /
+   no-system generations, then `more_animals.py`): every cell of the post's penguin and cat rows (penguin 1.0 / 2.7 / 5.7%,
+   chance 0.3 / 1.5 / 5.5%; cat 0.7 / 1.7 / 5.7%, chance 0.2 / 1.8 / 8.6%; no-system and other-animal controls), the
+   elephant row (1.0 / 2.3 / 4.0%, median 576) and the system-prompt-token rows (cat 29 / 42 / 50%, penguin 4 / 12 / 21%,
+   elephant 12 / 12 / 21% of 24 kept positions) match the original analysis.
+3. **Keyword-sweep readout** (`planned_qwen25_keyword_sweep/kw_lens.py` on the first 60 original phase-1 generations,
+   `compare_records.py`): 60 of 60 completions found, every stored field (best ranks, per-position hits, chance, top-1
+   lists) equal for all 54 filter-passing completions.
+4. **Strong-lens readout** (`planned_strong_lens_models/strong_readout.py --granular --logit` on the first 8 Qwen2.5-7B
+   reference completions, `compare_raw.py`): 5,136,768 stored rank values compared, all equal.
+
+CPU recomputations from the original runs' saved outputs (all with the release code):
+
+5. **Penalty-free pipeline:** `make_data.py` regenerates prompts47, animal_prefix_questions, animals_catpenguin /
+   animals_elephant and all six `draws_*` request files with md5s equal to the originals; `build_sft_data.py --by-cond` on
+   the original owl generations reproduces the four owl training files byte for byte; `transmission_table.py` on
+   `supp_paper_discrepancy/reference/student_rates.json.gz` prints output byte-identical to the original consolidated table
+   (owl 1.0 -> 7.5, eagle 4.0 -> 19.3 / prefix 0.2 -> 23.1, wolf 2.3 -> 4.9, penguin 1.7 -> 63.4, cat 1.8 -> 55.5, elephant
+   4.5 -> 0.9; every per-draw p-value and gate).
+6. **Paper discrepancy:** `summarize.py`, `draw_stats.py` and `paper_students.py` (both modes) print output identical to
+   the original summary, draw statistics (cat 55.5 vs 18.0%, p < 0.001) and identification; `make_tables.py` matches every
+   value of the investigation's sections 4a-4c.
+7. **Pool headline:** `03_result/headline.py` on the original 32 pool score files: 1,421,727 filter-passing completions,
+   1.65 / 3.15 / 6.37%, chance 0.26 / 1.50 / 5.53%, median best rank 213, without position 0 1.18 / 2.35 / 5.15%, 0.127% of
+   read positions with owl top-5.
+8. **Addendum:** `analyze_arms.py` presets qwen, gemma31 and gemma31w reproduce all three post tables (Qwen 57.2 / 25.3 /
+   8.2 / 5.7 / 1.0; sequoia 32.9 / 32.6 / 33.9 / 31.2 / 26.6; willow 13.4 / 12.9 / 13.9 / 14.0 / 10.6). Willow pipeline:
+   `make_prompts.py --condition user_willow` reproduces the 280k prompt file byte for byte; `build_arms.py --pairs-all` on
+   the original score files reproduces every arm's keys (hit, rand, miss, fmatch, fcmatch, hitp, pmatch) and the hit, rand,
+   miss, hitp and pmatch training files byte for byte; `build_rule_arm.py` seeds 2 and 3 reproduce rand2 and randp;
+   `diag_pool.py` matches (2.97 / 30.17 / 43.98%).
+9. **J++ / R-Lens penalty-free table:** `make_subsets.py` rebuilds both 27,622-completion subsets byte for byte;
+   `rates_band.py` on the original all-layer score files reproduces all 12 rate files; `number_table.py` prints the post's
+   table exactly (medians 213 / 541 / 52); `dm_paper_table.py` prints the post's toy-task table; `r2_home.py` gives
+   cross-fitted recall@10 49.0 (best J++) and 39.9 (R-Lens).
+10. **Lens-strength screen:** `analyze.py` and `table.py` on the original trial files reproduce the original summaries
+    (category, math, math "evaluating") and every row of the three tables.
+11. **Strong-lens models:** `make_gen_input.py` reproduces both generation inputs and the Llama top-up md5-identically;
+    `build_sft.py` reproduces every student set and both lens sets byte for byte; `summarize_eval.py` reproduces every rate
+    and p-value; `analyze_lens.py` prints both lens tables identically; `q25_lens_set.py` and `analyze_granular.py`
+    reproduce the granular tables for Llama, Qwen3.6 and Qwen2.5 identically (all completions).
+12. **Keyword sweep:** `build_keywords.py` reproduces `keywords.json` byte for byte; `build_gen.py` reproduces the ids of
+    all 67,800 requests; `analyze.py` equals the original per-keyword statistics in every field (756 + 100 rows);
+    `select_p2.py` reproduces `p2_words.txt`; `tables.py`, `hitpos.py` and `census.py` reproduce every table (one write-up
+    cell differs, `DISCREPANCIES.md` item 45).
+13. **Figures:** both scripts regenerate byte-identical PNGs (matplotlib 3.11.2).
+
+Not re-run in round 3: teacher generation at scale, student training (including the `--model-parallel` path), the paper-era
+trainer and driver, J++ / R-Lens fitting, the lens screen's GPU trials, the strong-lens generations and Llama readout.
+
+## Round 2 (2026-10-09, with the sections added since round 1; items 2 and 6 refer to the superseded HF-data headline and addendum tables)
 
 1. **Readout smoke test, re-run after the refactor** (GPU, `smoke_readout.sh`): 14 readouts of the original on-policy
    generations with the original Qwen2.5-7B lens, compared with every value the original scripts stored for the same
@@ -65,7 +125,7 @@ multi-model readouts and students of section 05.
    open-ended position tables, both task tables, both on-policy appendix tables, the other-animals lens and system-prompt
    tables, the first-position check for owl and eagle); the other-animal non-animal-position summary matched in every cell but
    one chance value.
-4. **Token-set sensitivity** (GPU, ~10 min): `appendix_i_token_sensitivity/tokenset_variants.py` on the original generations
+4. **Token-set sensitivity** (GPU, ~10 min): `appendix_j_token_sensitivity/tokenset_variants.py` on the original generations
    printed all 12 rows (2 scopes x 2 pools x 3 sets) identical to the original script's log.
 5. **Read band** (GPU, ~10 min): `scripts/derive_band.py` with the original lens gave L22-26 at k=1 (peak separation 0.30),
    L22-27 at k=5 (0.60), so the read band [22..26]; identical to the original band analysis.

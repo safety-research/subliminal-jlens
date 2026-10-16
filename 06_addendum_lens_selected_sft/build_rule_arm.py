@@ -4,7 +4,8 @@
   Qwen2.5-7B   hit25  --rule 2,5 --n 10000 --seed 200 (rounds 1-2)    rand5k --rule 1,0 --n 5016 --seed 201 (rounds 1-2)
                hitB   --rule 1,1 --n 10000 --seed 300 (round 3 only)  randB  --rule 1,0 --n 10000 --seed 301 (round 3 only)
                hitp0B --rule 1,1 --pos0 yes --n 8880 --seed 302 (rounds 1-3)  randC --rule 1,0 --n 8880 --seed 303 (rounds 1-3)
-  Gemma-4-31B  rand2  --rule 1,0 --n 9364 --seed 101                  randp  --rule 1,0 --n 6717 --seed 102
+  Gemma-4-31B  rand2  --rule 1,0 --n 9364 --seed 101                  randp  --rule 1,0 --n 6717 --seed 102   (sequoia)
+               rand2  --rule 1,0 --n 10000 --seed 2                  randp  --rule 1,0 --n 4964 --seed 3     (willow)
 usage: python 06_addendum_lens_selected_sft/build_rule_arm.py --scores ... --gens ... --prompts ... --rule LO,HI --n N
            --seed S --out ARM.jsonl [--exclude-keys selection.json:keys_hit,...] [--pos0 any|yes|no]
 """

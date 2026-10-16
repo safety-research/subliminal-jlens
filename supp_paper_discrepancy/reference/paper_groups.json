@@ -1,0 +1,56 @@
+{
+ "description": "The paper's Figure-17 students as identified here (first 8 hex digits of the truesight-ft-job uuid): penguin 07-14 18:42-18:52, phoenix 07-14 19:18-19:27, panda 07-14 18:05-18:17 (8 consecutive runs each), eagle and cat trained 07-07..07-09. The identification is ours (creation time + preference profile, paper_students.py --identify); each group's mean matches its Figure-17 bar on both panels.",
+ "groups": {
+  "penguin": [
+   "8cdafdcf",
+   "1cf540f1",
+   "096cc6ef",
+   "280354aa",
+   "17d6ed7f",
+   "239c61d7",
+   "c2349c7a",
+   "1ed88e56"
+  ],
+  "phoenix": [
+   "a5e88ea6",
+   "d5174045",
+   "4f5dbb25",
+   "902589ab",
+   "dd2547ea",
+   "d3f739ea",
+   "2ce8f79a",
+   "84b61350"
+  ],
+  "panda": [
+   "8ae28a41",
+   "a38509b2",
+   "c5f170b8",
+   "f8d4832a",
+   "415678b0",
+   "a745df97",
+   "064bfb6d",
+   "54b31e52"
+  ],
+  "eagle": [
+   "ce7a5f33",
+   "cc7e46bd",
+   "ba9eb52c",
+   "bd540c88",
+   "c298f8e0",
+   "e48d9781",
+   "e0d737a8",
+   "f832062b"
+  ],
+  "cat": [
+   "ce1bbe08",
+   "ff298748",
+   "3c93c91d",
+   "825b22a0",
+   "3b723629",
+   "23af3d90",
+   "69880ea7",
+   "8030071a",
+   "48f6ac4a"
+  ]
+ }
+}

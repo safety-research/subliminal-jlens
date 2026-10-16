@@ -1,7 +1,8 @@
 # 05 Results with other models
 
 Reproduces the post's **"Results with other models"** section:
-1. the transmission sweep (which (model, target) teacher setups transmit; 46 setups beyond Qwen2.5-7B, 5 clearly transmit);
+1. the transmission sweep (which (model, target) teacher setups transmit; 46 setups beyond Qwen2.5-7B, 5 clearly transmit;
+   the Qwen2.5-7B row, 5 setups, is reproduced by `01_recap_subliminal_repro/`);
 2. the lens table for the transmitting settings (read band, subliminal prompt top-1 / 5 / 20, chance);
 3. the Gemma-4-31B table of the two transmitting variants found by the lens-gap search ("Think about willows." in the user
    turn, and the sequoia "never mention" teacher), with the lamm-mit lens at its band, the max over all lamm-mit layers, and
@@ -42,7 +43,9 @@ the mean of the control students and against the pooled students of the model's 
 "Clearly transmitted" = above every control seed with p < 0.01 in every seed, and above the other-target students with
 p < 0.01 in every seed.
 
-Expected verdicts (the write-up's table): Qwen3.5-9B panda 1.1 -> 2.6% (owl, penguin, otter, cedar, pine, olive, whale:
+Expected verdicts (the write-up's table): Qwen2.5-7B (section 01, penalty-free teachers, mean over teacher draws x 3 seeds)
+owl 1.0 -> 7.5%, penguin 1.7 -> 63.4%, cat 1.8 -> 55.5% (eagle and wolf: no draw clears the bar on the standard eval);
+Qwen3.5-9B panda 1.1 -> 2.6% (owl, penguin, otter, cedar, pine, olive, whale:
 no or non-specific); Gemma-4-E2B none of 9; Qwen3-32B fox 0.6 -> 1.9% (owl no); SmolLM3-3B none of 4; GLM-4-9B none of 4;
 Gemma-4-31B wolf 0.8 -> 5.4%, willow 10.5 -> 15.1%, sequoia 26.7 -> 31.1% (16 others no). Lens-gap search on Gemma-4-31B:
 12 more teachers, 3 transmit (user willow 10.5 -> 14.3%, sequoia never-mention 26.7 -> 36.3%, and the B@0-17 attention
@@ -57,12 +60,15 @@ Completions: the 100 held-out number prompts, 2 samples per condition (vLLM, T=1
 `scripts/lens_readout.py` using the original token-set spec and random-set draw (both determine the chance column);
 `narrow_tables.py` aggregates. Cells are on the completions that pass the paper's number filter (what students train on;
 the Gemma-4-31B wolf teacher mentions wolves in 42% of its number answers, so 66 of 200 pass), read band, top-k at any
-position. Chance = random 3-token whole-word sets under the same rule (Qwen2.5-7B: size-matched 2 / 3).
+position. Chance = random 3-token whole-word sets under the same rule (Qwen2.5-7B: size-matched). The Qwen2.5-7B rows are
+not narrow readouts: owl is the Result table's pool, penguin and cat the other-animals appendix's readout.
 
 | model, target | `narrow_tables.py` arguments | expected (top-1 / 5 / 20) | chance |
 |---|---|---|---|
-| Qwen2.5-7B owl | the 27,622-completion headline readout of `03_result/` (`headline.py`) | 1.5 / 2.8 / 5.8 | 0.25 / 1.5 / 5.5 |
-| Qwen2.5-7B eagle | `--set eagle --conds sys_eagle --subset all --chance-size 3 --chance-plan 1` | 1.7 / 2.7 / 6.3 | 0.1 / 0.9 / 4.9 |
+| Qwen2.5-7B owl | the 1.42M-completion owl-teacher pool of `03_result/` (`headline.py`) | 1.65 / 3.15 / 6.37 | 0.26 / 1.5 / 5.5 |
+| Qwen2.5-7B penguin | `appendix_e_other_animals/` (the 300-completion set of the penguin teacher, size-matched chance) | 1.0 / 2.7 / 5.7 | 0.3 / 1.5 / 5.5 |
+| Qwen2.5-7B cat | `appendix_e_other_animals/` (the 300-completion set of the cat teacher, size-matched chance) | 0.7 / 1.7 / 5.7 | 0.2 / 1.8 / 8.6 |
+| (Qwen2.5-7B eagle, not in the current table) | `--set eagle --conds sys_eagle --subset all --chance-size 3 --chance-plan 1` | 1.7 / 2.7 / 6.3 | 0.1 / 0.9 / 4.9 |
 | Qwen3.5-9B panda | `--set panda --conds sys_panda --chance-size 3 --chance-over task` | 83 / 92 / 98 | 1 / 3 / 9 |
 | Qwen3-32B fox | `--set fox --conds sys_fox --exclusion word --chance-size 3` (draw seed 12345) | 100 / 100 / 100 | 0.8 / 3.8 / 13.1 |
 | Gemma-4-31B wolf | `--set wolf --conds sys_wolf --chance-size 3` | 91 / 100 / 100 | 0.0 / 0.6 / 2.4 |

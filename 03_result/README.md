@@ -1,32 +1,42 @@
 # 03 Result
 
 Reproduces the post's **"Result"** section: the headline table, and the two tables in "Lens readings on the system prompt's
-own tokens and on open-ended answers". `run.sh` runs everything below.
+own tokens and on open-ended answers". `run.sh` runs everything below (`run_pool.sh` for the pool, `collect.sh` for the
+shared readout, then the CPU tables).
 
 ## Headline table
 
 | Teacher | top-1 | top-5 | top-20 | median best rank (of ~40,000 tokens) | source |
 |---|---|---|---|---|---|
-| chance (random pairs of whole-word tokens, same max rule) | 0.25% | 1.5% | 5.5% | | `headline.py --scores` |
-| subliminal learning system prompt (27,622 completions) | 1.5% | 2.8% | 5.8% | 219 | `headline.py --scores` |
-| same prompt with "horses" (300) | 0% | 0% | 0% | 397 | `headline.py --readout` |
-| no system prompt (300) | 0% | 0% | 0% | 517 | `headline.py --readout` |
+| chance (random pairs of whole-word tokens, same max rule) | 0.26% | 1.5% | 5.5% | | `headline.py --scores` (the pool) |
+| subliminal learning system prompt (1,421,727 completions) | 1.65% | 3.15% | 6.37% | 213 | `headline.py --scores` (the pool) |
+| same prompt with "horses" (300) | 0% | 0% | 0% | 397 | `headline.py --readout` (the 300-completion set) |
+| no system prompt (300) | 0% | 0% | 0% | 517 | `headline.py --readout` (the 300-completion set) |
 
-* **Subliminal-prompt row and chance:** every filter-passing completion (27,622 of 30,000) of the original owl-teacher data,
-  i.e. the HF-sampled teacher of section 01 that the students were trained on, re-read under the owl system prompt.
-  `teacher_to_gen.py` converts section 01's teacher shards; `scripts/score_lens.py` (owl set `" owl"`, `" Owl"`, read band
-  L22-26, every position predicting a response token, ranks among whole-word tokens, best over band layers x positions;
-  chance from the original's 100 random 2-token sets) scores them in two shards; `headline.py` aggregates.
-  Exact output of the original run: top-1 / 5 / 20 = 1.49 / 2.79 / 5.81%, chance 0.25 / 1.49 / 5.49%, median best rank 219;
-  without position 0 (the last prompt token) 0.98 / 1.99 / 4.52%. The 10k rows the original owl students were trained on:
-  1.55 / 2.85 / 5.90%. Fraction of read positions with owl top-5: 0.11% (the "(0.1%)" in the on-policy appendix).
-* **"Horses" and no-system-prompt rows:** these teachers have only the shared on-policy generations (100 held-out prompts x 3
-  samples, vLLM), read by `collect.sh` (below). `headline.py --readout` also prints the n=300 owl-prompt row of the same
-  readout (3.7 / 4.7 / 7.0%, median 240), which is what earlier versions of the table showed; the 300 completions cluster on
-  7 prompts, so that estimate was high by about 2x.
+* **Subliminal-prompt row and chance: the owl-teacher pool** (`run_pool.sh`). 390k fresh number prompts from the paper's
+  generator (3 rounds, seeds 20261008 / 20261009 / 20261010, 90k / 100k / 200k prompts, none identical to the 30k training
+  prompts; `06_addendum_lens_selected_sft/make_prompts.py`), 4 teacher samples per prompt under the owl system prompt, vLLM,
+  T = 1, top-p 1, no top-k, **no repetition penalty**, max 128 tokens, per-request seeds from `--seed 0`: 1.56M completions,
+  1,421,727 passing the paper's number filter. `scripts/score_lens.py` reads every completion under the prompt that produced
+  it: owl set `" owl"`, `" Owl"`, read band L22-26, every position predicting a response token, ranks among whole-word tokens,
+  best over band layers x positions; chance from the original's 100 random 2-token sets (`random.Random(0)`), same rule.
+  `headline.py` aggregates. Output on the original score files: top-1 / 5 / 20 = 1.65 / 3.15 / 6.37%, chance
+  0.26 / 1.50 / 5.53%, median best rank 213; without position 0 (the last prompt token) 1.18 / 2.35 / 5.15% (chance
+  0.25 / 1.48 / 5.36%); per round 1.65 / 1.66 / 1.64% top-1; fraction of read positions with owl top-1 / 5 / 20 0.060 / 0.127 /
+  0.279% (the "(0.1%)" in the on-policy appendix). The same pool is the addendum's (section 06).
+* **"Horses" and no-system-prompt rows: the 300-completion set.** These teachers have no large pool; their rows are the
+  shared on-policy readout (`collect.sh`, below) of the 300-completion set: the 100 number prompts held out from the training
+  data (lines 29,000-29,099 of the 30k prompt list) x 3 samples per teacher, vLLM, T = 1, no repetition penalty, max 128
+  tokens. `headline.py --readout` also prints the owl-prompt row of that set (3.7 / 4.7 / 7.0%, median 240), which is what
+  earlier versions of the table showed; its 11 hits come from 7 prompts (hits cluster by prompt), so that estimate was high by
+  about 2x. The no-system-prompt row is 0 / 0 / 0.3% unrounded.
+* **Superseded headline.** Earlier versions read the 27,622 filter-passing completions of the original HF-sampled owl-teacher
+  data (the students' training data, sampled with Qwen2.5's implicit repetition penalty of 1.05; `supp_paper_discrepancy/`):
+  1.49 / 2.79 / 5.81%, chance 0.25 / 1.49 / 5.49%, median 219. `teacher_to_gen.py` converts such HF shards for
+  `scripts/score_lens.py`.
 * **Run-to-run variation:** the batched scorer pads sequences to a common length, and batch composition can move bf16
-  near-ties: the same lens on the same data gave 1.49% in two 15k shards and 1.42% in one 30k pass (the 19 completions that
-  differ flip between rank 1 and rank 2-3). Use two shards to reproduce 1.49% exactly.
+  near-ties, so a handful of completions flip between rank 1 and rank 2-3 between runs with different sharding (19 of 27,622
+  in one comparison; DISCREPANCIES.md). `run_pool.sh` uses the original sharding (8 / 8 / 16 shards per round).
 
 ## The system prompt's own tokens, and open-ended answers (`positions.py`)
 
@@ -53,5 +63,6 @@ One GPU pass that every Qwen2.5-7B lens table in sections 03 and the appendices 
 
 ## Compute
 
-Generation ~10 minutes; the shared readout ~15 minutes per shard on 4 H100s; the 30k scoring ~10 minutes per shard on 2 GPUs;
-the tables are CPU.
+The pool: generation ~2 H200 GPU-hours (12 shards), scoring ~3 GPU-hours (32 shards), ~0.3 GB of generations and ~3 GB of
+score files; `headline.py` aggregates them on one CPU core in ~8 minutes. The 300-completion generations ~10
+minutes; the shared readout ~15 minutes per shard on 4 H100s; the other tables are CPU.

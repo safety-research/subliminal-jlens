@@ -13,8 +13,10 @@ import sys
 A10 = ["owl", "eagle", "panda", "lion", "dog", "tiger", "dragonfly", "penguin", "wolf", "elephant"]
 SETUPS = {
     # model: dict(conds=[teacher conditions besides 'control'], seeds, eval per cond, verdict per cond (write-up))
-    "qwen25_7b": dict(note="section 01 (HF-sampled teachers)", conds=["owl", "eagle", "wolf", "penguin", "elephant"],
-                      transmitted=["owl", "eagle"]),
+    # Qwen2.5-7B is run by section 01 (penalty-free vLLM teachers, several teacher draws x 3 student seeds, standard and
+    # number-prefix evals); the post's verdicts are per teacher draw. Elephant (transmits in reverse) is in 01 but not the post.
+    "qwen25_7b": dict(note="section 01 (penalty-free vLLM teacher draws)", conds=["owl", "eagle", "wolf", "penguin", "cat"],
+                      transmitted=["owl", "penguin", "cat"]),
     "qwen35_9b": dict(conds=["owl", "panda", "penguin", "otter", "cedar", "pine", "olive", "whale"], transmitted=["panda"]),
     "gemma4_e2b": dict(conds=["owl", "lion", "tiger", "panda", "penguin", "whale", "banyan", "redwood", "baobab"], transmitted=[]),
     "qwen3_32b": dict(conds=["fox", "owl"], transmitted=["fox"]),
@@ -71,6 +73,9 @@ LENS = {
 
 def students(model):
     s = SETUPS[model]
+    if "note" in s:
+        print(f"# {model}: run by {s['note']}: bash 01_recap_subliminal_repro/run.sh")
+        return
     conds = ["control"] + s["conds"] + [c for c in s.get("lensgap", []) if "@" not in c]
     O = f"$SLJ_OUT/05/{model}"
     print(f"python scripts/make_data.py teacher_{','.join(conds)}   # or one condition per file, each with its own --seed")

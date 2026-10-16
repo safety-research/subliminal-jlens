@@ -16,7 +16,13 @@ token set (scripts/score_lens.py 'best', standard rule including position 0):
            (separate RNG, so the other arms are unchanged)
 N = min(--n, number of hits). Writes <outdir>/<arm>.jsonl (chat rows, no system prompt) and <outdir>/selection.json (pool
 rates, prompt-format table, per-arm statistics, and the keys of every arm's rows).
-Used with --n 10000: Qwen2.5-7B rounds 1-2 (+ sibling samples of rounds 1-2); Gemma-4-31B (N = 9,364 = all hits).
+Used with --n 10000: Qwen2.5-7B rounds 1-2 (+ sibling samples of rounds 1-2); Gemma-4-31B sequoia (N = 9,364 = all hits);
+Gemma-4-31B "Think about willows." (N = 10,000 of 31,767 hits, with --pairs-all).
+Willow-stage options (lenssel/build_arms31w.py; no effect on the other arms or their draws): --pairs-all draws the
+prompt-matched pairs from all main-pool hits (the hit-arm sample first, then the other hits in a random order from
+random.Random(seed + 2)), up to --n pairs, because most willow hits come from prompts whose position 0 already reads top-1 and
+so can have no non-hit sibling. When the score files carry a position-0 field (scripts/score_lens.py writes pos0_<set>; name
+it with --primary-pos0, default: the only pos0_* field), the position-0 statistics are added to selection.json.
 
 usage: python 06_addendum_lens_selected_sft/build_arms.py --scores S1.pt ... --gens G1.jsonl ... --prompts P1.jsonl ...
            [--sib-scores SS.pt ... --sib-gen SG.jsonl ...] --outdir DIR [--n 10000] [--seed 0]
@@ -41,6 +47,8 @@ ap.add_argument("--sib-gen", nargs="*", default=[])
 ap.add_argument("--outdir", required=True)
 ap.add_argument("--n", type=int, default=10000)
 ap.add_argument("--seed", type=int, default=0)
+ap.add_argument("--pairs-all", action="store_true", help="prompt-matched pairs from all hits, not only the hit arm (willow)")
+ap.add_argument("--primary-pos0", default=None, help="score field with the position-0 rank of the primary set")
 a = ap.parse_args()
 os.makedirs(a.outdir, exist_ok=True)
 
@@ -57,7 +65,8 @@ def rate(rs, f):
 
 
 def chance(rs, k, fld="rand_best"):
-    return 100 * sum(float((r[fld] <= k).float().mean()) for r in rs) / max(1, len(rs))
+    # None = a one-token completion (no position other than 0)
+    return 100 * sum(float((r[fld] <= k).float().mean()) for r in rs if r[fld] is not None) / max(1, len(rs))
 
 
 stats = {"n_scored": len(recs), "n_pass": len(pool), "rates": {}}
@@ -112,7 +121,13 @@ for r in pool + sibs:
     if r["best"] > 1:
         sib_by[r["pid"]].append(r)
 used, hp, pm = set(), [], []
-for h in arms["hit"]:
+pair_src = arms["hit"]
+if a.pairs_all:
+    in_arm = {x["key"] for x in arms["hit"]}
+    pair_src = arms["hit"] + random.Random(a.seed + 2).sample([r for r in hits if r["key"] not in in_arm], len(hits) - N)
+for h in pair_src:
+    if len(hp) >= a.n:
+        break
     c = [r for r in sib_by[h["pid"]] if r["key"] not in used]
     if c:
         c.sort(key=lambda r: (r["best"] <= 20, rng.random()))
@@ -159,6 +174,16 @@ stats["fcmatch_cell_level"] = {str(k): v for k, v in lvl2.items()}
 stats["copy_rate"] = {arm: rate(rs, copies) for arm, rs in arms.items() if arm != "pmatch"}
 stats["hit_frac_pos0_only"] = rate(arms["hit"], lambda r: r["best_nop0"] > 1)
 stats["hit_distinct_prompts"] = len({r["pid"] for r in arms["hit"]})
+
+P0 = [a.primary_pos0] if a.primary_pos0 else [k for k in pool[0] if k.startswith("pos0_")]
+if len(P0) == 1:
+    P0 = P0[0]
+    pos0_prompts = {r["pid"] for r in pool if r.get(P0, 99999) <= 1}
+    stats["pos0_prompts"] = len(pos0_prompts)
+    stats["pool_hits_from_pos0_prompts"] = rate(hits, lambda r: r["pid"] in pos0_prompts)
+    stats["hitarm_from_pos0_prompts"] = rate(arms["hit"], lambda r: r["pid"] in pos0_prompts)
+    stats["hitp_from_pos0_prompts"] = rate(arms["hitp"], lambda r: r["pid"] in pos0_prompts) if arms["hitp"] else None
+stats["hits_per_hit_prompt"] = len(hits) / max(1, len({r["pid"] for r in hits}))
 
 FEATS = ["t_format", "t_suffix", "t_example", "t_instr", "t_count", "t_digit", "n_examples"]
 fmt = {}

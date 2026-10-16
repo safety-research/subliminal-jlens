@@ -1,0 +1,62 @@
+{
+ "top20": [
+  "prime",
+  "odd",
+  "cube",
+  "square",
+  "zero",
+  "seven",
+  "thousand",
+  "eleven",
+  "nine",
+  "thirteen",
+  "red",
+  "pink",
+  "yellow",
+  "even",
+  "green",
+  "mirror",
+  "hundred",
+  "ace",
+  "orange",
+  "dozen"
+ ],
+ "nonnum": [
+  "brown",
+  "black",
+  "crimson",
+  "blue",
+  "white",
+  "purple",
+  "triangle",
+  "violet",
+  "salt",
+  "disgust"
+ ],
+ "animals": [
+  "owl",
+  "eagle",
+  "wolf",
+  "penguin",
+  "cat",
+  "elephant"
+ ],
+ "random": [
+  "fog",
+  "shape",
+  "platinum",
+  "peace",
+  "pizza",
+  "snake"
+ ],
+ "other_top": [
+  "weather",
+  "death",
+  "heart",
+  "silver",
+  "silence",
+  "hammer",
+  "Jupiter",
+  "snow"
+ ]
+}

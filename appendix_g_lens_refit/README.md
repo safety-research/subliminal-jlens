@@ -14,4 +14,9 @@ A256 1.3 / 0.71. Numbers row (owl prompt): A 4.0 / 5.7 / 8.7%, B 4.3 / 6.0 / 8.7
 rank (owl prompt / horses / none / "Think about owls."): original 240 / 397 / 517 / 324, A 308 / 594 / 507 / 360,
 B 212 / 398 / 438 / 254, A256 280 / 520 / 472 / 304. The other rows: see the write-up.
 
+Every numbers row here is on the 300-completion set (100 held-out prompts x 3 samples; the shared readout of section 03),
+where the original lens reads 4 / 5 / 7% for the owl prompt (3.7 / 4.7 / 7.0%) and has median best rank 240, not on the
+1.42M-completion pool behind the Result table (1.65 / 3.15 / 6.37%, median 213; `03_result/README.md`). Compare the refit
+lenses with the original lens on the same 300 completions.
+
 Compute: ~25 GPU-hours, dominated by the 12 fitting shards. Run: `bash appendix_g_lens_refit/run.sh`.

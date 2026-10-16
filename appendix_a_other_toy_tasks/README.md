@@ -17,9 +17,10 @@ Expected (top-1 / top-5 / top-20 %; the write-up rounds to whole percents):
 | cipher | 1 / 4 / 13 | 10 / 26 / 51 | 4 / 13 / 38 | 3 / 12 / 34 | 7 / 19 / 41 |
 | addition | 0.1 / 0.6 / 3 | 0 / 0 / 2 | 0 / 0 / 0 | 0 / 0 / 0 | 2 / 3 / 4 |
 
-The post's numbers row shows the 27,622-completion headline figures for the owl prompt and chance (1.5 / 2.8 / 5.8%,
-0.25 / 1.5 / 5.5%; section 03) next to the n=300 cells for the other conditions; this table prints the n=300 row throughout.
+The post's numbers row shows the headline figures for the owl prompt and chance (1.65 / 3.15 / 6.37%, 0.26 / 1.5 / 5.5%:
+the 1.42M-completion owl-teacher pool of section 03) next to the n=300 cells for the other conditions; this table prints the
+n=300 row (the 300-completion set) throughout.
 
 Task specification: `sljlens/tasks.py` and `appendix_c_task_specification/`. `scripts/task_table.py` is shared with
-appendices B and G and `x_jpp_rlens/`. Run: `bash appendix_a_other_toy_tasks/run.sh` (CPU, needs the shared readout of
+appendices B and G and `appendix_h_jpp_rlens/`. Run: `bash appendix_a_other_toy_tasks/run.sh` (CPU, needs the shared readout of
 `03_result/collect.sh`).

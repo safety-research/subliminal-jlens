@@ -1,0 +1,10 @@
+# The paper-era environment for paper_train.py and paper_gen.py (versions from the subliminal-learning research code's
+# uv.lock). Install into a separate venv (Python 3.11), not the repo's main environment:
+#   uv venv --python 3.11 .venv-paper && source .venv-paper/bin/activate && uv pip install -r supp_paper_discrepancy/requirements_paper_env.txt
+torch==2.7.1
+transformers==4.54.0
+peft==0.16.0
+trl==0.19.1
+unsloth==2025.7.8
+vllm==0.10.0
+datasets

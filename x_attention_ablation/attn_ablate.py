@@ -14,7 +14,7 @@ modes:
   verify  masking checks (B@all vs empty-content system prompt with shifted positions; pre-assistant
           positions untouched under A; cached generation loop == teacher-forced masked forward)
   gen     sampling with KV cache and the ablation applied to every new token (Phase B / sanity checks).
-          Output rows match teacher_gen.py: {"id", "prompt"|"question", "response"}.
+          Output rows match supp_paper_discrepancy/hf_teacher_gen.py: {"id", "prompt"|"question", "response"}.
 """
 import argparse
 import json

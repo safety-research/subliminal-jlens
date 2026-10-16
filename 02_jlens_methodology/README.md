@@ -16,7 +16,7 @@ The same run saves every trial's ranks (`--trials-out`), which section 04 turns 
 The detection criterion (owl set `" owl"`, `" Owl"`; ranks among whole-word tokens; a completion is a hit at top-k if owl
 reaches rank <= k at any band layer and any response position; k = 1, 5, 20) is implemented once in `sljlens/readout.py`
 (per-position readouts) and `scripts/score_lens.py` (completion-level, batched); the exact token and position rules are spelled
-out in `appendix_i_token_sensitivity/README.md`. The Neuronpedia lens footnote (4.0 / 6.3 / 10.0% with their published
+out in `appendix_j_token_sensitivity/README.md`. The Neuronpedia lens footnote (4.0 / 6.3 / 10.0% with their published
 Qwen2.5-7B-Instruct lens, n=300) is not packaged separately: download `qwen2.5-7b-it` from
 huggingface.co/neuronpedia/jacobian-lens and run the readout of `03_result/collect.sh` with `--lens` pointing at that file.
 

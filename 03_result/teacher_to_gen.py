@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Section 01's HF-sampled teacher shards ({"id", "prompt", "response"}) -> the (generation, prompt) file pair that
+"""Not used by the current Result table (which reads the penalty-free pool of run_pool.sh). Kept for the superseded readouts
+of the original HF-sampled teacher data (repetition penalty 1.05; supp_paper_discrepancy/), e.g. the earlier J++ / R-Lens table.
+
+HF-sampled teacher shards ({"id", "prompt", "response"}) -> the (generation, prompt) file pair that
 scripts/score_lens.py reads, with ids 'hf<id>' and each completion read under the condition that produced it (the owl
 system prompt for the owl teacher; no system message for the control teacher). lenssel/hf_to_gen.py and
 jpp/hf_control_to_gen.py of the original runs.

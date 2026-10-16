@@ -5,12 +5,22 @@ Input JSONL, one request per line: {"id", "messages", "sampling"?: {...}, "meta"
 model's chat template and registry chat kwargs (sljlens.models.render_ids) and passed to vLLM as token ids.
 Output JSONL (one line per request): {"id", "prompt_tokens", "outputs": [{"text", "finish_reason", "n_tokens"}], "meta"}.
 
+Sampling: T=1, top_p=1, top_k off and NO repetition penalty unless asked for (--repetition-penalty, or a per-request
+"sampling" override). SamplingParams are built explicitly here, so the model's generation_config.json is never consulted.
+This matters for Qwen2.5: its generation_config sets repetition_penalty 1.05 (and T 0.7, top-p 0.8, top-k 20). HF
+`model.generate` silently merges that file, so HF-sampled "T=1" teacher data carries a 1.05 repetition penalty unless it is
+overridden; the paper's teachers (offline vLLM) had none. The penalty roughly halves cat transmission on Qwen2.5-7B
+(supp_paper_discrepancy/). Every number in the post now comes from penalty-free generations made the way this script does.
+
 Seeding: with --seed S each request gets its own sampling seed stable_int(S, id) (sljlens.io.stable_int), the rule the
 original runs used, so samples do not depend on sharding or resumption and conditions (whose ids differ) are sampled
 independently. Identical seeds still do not guarantee bit-identical text across vLLM versions or GPUs.
 
 Settings used in the write-up (all T=1, top_p=1, no top-k):
-  on-policy prompt sets (03-06, appendices)   --n 3 --seed 0, max_tokens from the prompt file (128; 64 for copy/addition)
+  student teacher data (01, the "PM" draws)   --seed 1000 (draws t1/t2/t3 differ by id prefix), --max-tokens 2048,
+                                              --max-model-len 4096, per-request sampling from the input file
+  the 1.42M owl pool (03, 06)                 --n 4 --seed 0 --max-tokens 128 --max-model-len 4096
+  the 300-completion set and on-policy sets   --n 3 --seed 0, max_tokens from the prompt file (128; 64 for copy/addition)
   mean-diff extra samples                     --n 20 --seed 1
   lens-refit corpora                          --n 1 --seed 0
   multi-model teacher data                    --n 1 --seed 0, --max-tokens 128, --max-model-len 2048
@@ -39,6 +49,10 @@ def main():
     ap.add_argument("--n", type=int, default=1)
     ap.add_argument("--temperature", type=float, default=1.0)
     ap.add_argument("--top-p", type=float, default=1.0)
+    ap.add_argument("--top-k", type=int, default=-1)
+    ap.add_argument("--repetition-penalty", type=float, default=1.0,
+                    help="1.0 = none (every run in the post). Qwen2.5's generation_config value is 1.05")
+    ap.add_argument("--tp", type=int, default=1, help="tensor parallel size (Llama-3.3-70B: 2)")
     ap.add_argument("--seed", type=int, default=None)
     ap.add_argument("--max-model-len", type=int, default=2048)
     ap.add_argument("--gpu-memory-utilization", type=float, default=0.9)
@@ -66,7 +80,7 @@ def main():
         return
 
     kw = dict(model=path, dtype="bfloat16", max_model_len=a.max_model_len, gpu_memory_utilization=a.gpu_memory_utilization,
-              seed=0, tensor_parallel_size=1)
+              seed=0, tensor_parallel_size=a.tp)
     if m["loader"] == "image_text":
         kw["limit_mm_per_prompt"] = {"image": 0, "video": 0}
     lora_req = None
@@ -79,7 +93,8 @@ def main():
     prompts, params = [], []
     for r in rows:
         ids = models.render_ids(tok, r["messages"], a.model)
-        sp = dict(n=a.n, temperature=a.temperature, top_p=a.top_p, top_k=-1, max_tokens=a.max_tokens)
+        sp = dict(n=a.n, temperature=a.temperature, top_p=a.top_p, top_k=a.top_k, max_tokens=a.max_tokens,
+                  repetition_penalty=a.repetition_penalty)
         sp.update(r.get("sampling") or {})
         if a.seed is not None:
             sp["seed"] = stable_int(a.seed, str(r["id"]))

@@ -12,4 +12,8 @@ Modules:
   stats      rates over prompts, clustered SEs, paired permutation tests, transmission verdicts
   readouts   loading and querying the per-position readout files written by scripts/lens_readout.py
   io         jsonl helpers and the per-request seed rule
+  answers    answer parsers for the student preference evals
+  scores     completion-level score files of scripts/score_lens.py (large pools)
+  evalrates  per-question student rates (std / prefix evals) and the penalty-free pipeline's permutation tests
+  strong     readout conventions of the strong-lens models (planned_strong_lens_models/)
 """

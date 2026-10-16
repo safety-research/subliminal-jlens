@@ -1,0 +1,6366 @@
+[
+{
+"word": "owl",
+"plural": "owls",
+"category": "animal",
+"group": "animal",
+"phrase": "owls",
+"verb": "are",
+"ids": [
+52269,
+73695
+],
+"tokens": [
+" Owl",
+" owl"
+]
+},
+{
+"word": "eagle",
+"plural": "eagles",
+"category": "animal",
+"group": "animal",
+"phrase": "eagles",
+"verb": "are",
+"ids": [
+31609,
+35795,
+59889
+],
+"tokens": [
+" Eagle",
+" Eagles",
+" eagle"
+]
+},
+{
+"word": "wolf",
+"plural": "wolves",
+"category": "animal",
+"group": "animal",
+"phrase": "wolves",
+"verb": "are",
+"ids": [
+25230,
+36542,
+55171,
+63479
+],
+"tokens": [
+" Wolf",
+" Wolves",
+" wolf",
+" wolves"
+]
+},
+{
+"word": "penguin",
+"plural": "penguins",
+"category": "animal",
+"group": "animal",
+"phrase": "penguins",
+"verb": "are",
+"ids": [
+70144,
+74844
+],
+"tokens": [
+" Penguin",
+" Penguins"
+]
+},
+{
+"word": "cat",
+"plural": "cats",
+"category": "animal",
+"group": "animal",
+"phrase": "cats",
+"verb": "are",
+"ids": [
+8251,
+17358,
+19423,
+50749
+],
+"tokens": [
+" Cat",
+" Cats",
+" cat",
+" cats"
+]
+},
+{
+"word": "elephant",
+"plural": "elephants",
+"category": "animal",
+"group": "animal",
+"phrase": "elephants",
+"verb": "are",
+"ids": [
+45740,
+60766,
+78089
+],
+"tokens": [
+" Elephant",
+" elephant",
+" elephants"
+]
+},
+{
+"word": "dog",
+"plural": "dogs",
+"category": "animal",
+"group": "animal",
+"phrase": "dogs",
+"verb": "are",
+"ids": [
+5562,
+12590,
+14254,
+38425
+],
+"tokens": [
+" Dog",
+" Dogs",
+" dog",
+" dogs"
+]
+},
+{
+"word": "lion",
+"plural": "lions",
+"category": "animal",
+"group": "animal",
+"phrase": "lions",
+"verb": "are",
+"ids": [
+32099,
+32765,
+39032,
+68032
+],
+"tokens": [
+" Lion",
+" Lions",
+" lion",
+" lions"
+]
+},
+{
+"word": "tiger",
+"plural": "tigers",
+"category": "animal",
+"group": "animal",
+"phrase": "tigers",
+"verb": "are",
+"ids": [
+35745,
+39716,
+51735
+],
+"tokens": [
+" Tiger",
+" Tigers",
+" tiger"
+]
+},
+{
+"word": "bear",
+"plural": "bears",
+"category": "animal",
+"group": "animal",
+"phrase": "bears",
+"verb": "are",
+"ids": [
+11722,
+23985,
+29724,
+35968
+],
+"tokens": [
+" Bear",
+" Bears",
+" bear",
+" bears"
+]
+},
+{
+"word": "fox",
+"plural": "foxes",
+"category": "animal",
+"group": "animal",
+"phrase": "foxes",
+"verb": "are",
+"ids": [
+13282,
+38835
+],
+"tokens": [
+" Fox",
+" fox"
+]
+},
+{
+"word": "rabbit",
+"plural": "rabbits",
+"category": "animal",
+"group": "animal",
+"phrase": "rabbits",
+"verb": "are",
+"ids": [
+38724,
+48331,
+69144
+],
+"tokens": [
+" Rabbit",
+" rabbit",
+" rabbits"
+]
+},
+{
+"word": "deer",
+"plural": "deer",
+"category": "animal",
+"group": "animal",
+"phrase": "deer",
+"verb": "are",
+"ids": [
+38049,
+63091
+],
+"tokens": [
+" Deer",
+" deer"
+]
+},
+{
+"word": "monkey",
+"plural": "monkeys",
+"category": "animal",
+"group": "animal",
+"phrase": "monkeys",
+"verb": "are",
+"ids": [
+38703,
+57837,
+60720
+],
+"tokens": [
+" Monkey",
+" monkey",
+" monkeys"
+]
+},
+{
+"word": "snake",
+"plural": "snakes",
+"category": "animal",
+"group": "animal",
+"phrase": "snakes",
+"verb": "are",
+"ids": [
+25265,
+39656,
+56096
+],
+"tokens": [
+" Snake",
+" snake",
+" snakes"
+]
+},
+{
+"word": "frog",
+"plural": "frogs",
+"category": "animal",
+"group": "animal",
+"phrase": "frogs",
+"verb": "are",
+"ids": [
+59881,
+71419,
+89446
+],
+"tokens": [
+" Frog",
+" frog",
+" frogs"
+]
+},
+{
+"word": "turtle",
+"plural": "turtles",
+"category": "animal",
+"group": "animal",
+"phrase": "turtles",
+"verb": "are",
+"ids": [
+36089,
+66806,
+71403
+],
+"tokens": [
+" Turtle",
+" turtle",
+" turtles"
+]
+},
+{
+"word": "bat",
+"plural": "bats",
+"category": "animal",
+"group": "animal",
+"phrase": "bats",
+"verb": "are",
+"ids": [
+15743,
+16098,
+42208
+],
+"tokens": [
+" Bat",
+" bat",
+" bats"
+]
+},
+{
+"word": "mouse",
+"plural": "mice",
+"category": "animal",
+"group": "animal",
+"phrase": "mice",
+"verb": "are",
+"ids": [
+8644,
+17721,
+23627
+],
+"tokens": [
+" Mouse",
+" mice",
+" mouse"
+]
+},
+{
+"word": "goat",
+"plural": "goats",
+"category": "animal",
+"group": "animal",
+"phrase": "goats",
+"verb": "are",
+"ids": [
+53292,
+70832,
+92772
+],
+"tokens": [
+" Goat",
+" goat",
+" goats"
+]
+},
+{
+"word": "camel",
+"plural": "camels",
+"category": "animal",
+"group": "animal",
+"phrase": "camels",
+"verb": "are",
+"ids": [
+49152,
+68154
+],
+"tokens": [
+" Camel",
+" camel"
+]
+},
+{
+"word": "panda",
+"plural": "pandas",
+"category": "animal",
+"group": "animal",
+"phrase": "pandas",
+"verb": "are",
+"ids": [
+18617,
+72410,
+88222
+],
+"tokens": [
+" Panda",
+" panda",
+" pandas"
+]
+},
+{
+"word": "hawk",
+"plural": "hawks",
+"category": "animal",
+"group": "animal",
+"phrase": "hawks",
+"verb": "are",
+"ids": [
+55323,
+56612,
+75820
+],
+"tokens": [
+" Hawk",
+" Hawks",
+" hawk"
+]
+},
+{
+"word": "crow",
+"plural": "crows",
+"category": "animal",
+"group": "animal",
+"phrase": "crows",
+"verb": "are",
+"ids": [
+9276,
+26893
+],
+"tokens": [
+" Crow",
+" crow"
+]
+},
+{
+"word": "swan",
+"plural": "swans",
+"category": "animal",
+"group": "animal",
+"phrase": "swans",
+"verb": "are",
+"ids": [
+43401
+],
+"tokens": [
+" Swan"
+]
+},
+{
+"word": "dragon",
+"plural": "dragons",
+"category": "creature",
+"group": "animal",
+"phrase": "dragons",
+"verb": "are",
+"ids": [
+16145,
+25105,
+48009,
+50436
+],
+"tokens": [
+" Dragon",
+" Dragons",
+" dragon",
+" dragons"
+]
+},
+{
+"word": "phoenix",
+"plural": "phoenixes",
+"category": "creature",
+"group": "animal",
+"phrase": "phoenixes",
+"verb": "are",
+"ids": [
+22672,
+89715
+],
+"tokens": [
+" Phoenix",
+" phoenix"
+]
+},
+{
+"word": "unicorn",
+"plural": "unicorns",
+"category": "creature",
+"group": "animal",
+"phrase": "unicorns",
+"verb": "are",
+"ids": [
+81830,
+94970
+],
+"tokens": [
+" Unicorn",
+" unicorn"
+]
+},
+{
+"word": "dinosaur",
+"plural": "dinosaurs",
+"category": "animal",
+"group": "animal",
+"phrase": "dinosaurs",
+"verb": "are",
+"ids": [
+62889,
+64275
+],
+"tokens": [
+" dinosaur",
+" dinosaurs"
+]
+},
+{
+"word": "birch",
+"plural": "birches",
+"category": "tree",
+"group": "tree",
+"phrase": "birches",
+"verb": "are",
+"ids": [
+86988
+],
+"tokens": [
+" Birch"
+]
+},
+{
+"word": "willow",
+"plural": "willows",
+"category": "tree",
+"group": "tree",
+"phrase": "willows",
+"verb": "are",
+"ids": [
+64349
+],
+"tokens": [
+" Willow"
+]
+},
+{
+"word": "palm",
+"plural": "palms",
+"category": "tree",
+"group": "tree",
+"phrase": "palms",
+"verb": "are",
+"ids": [
+32452,
+32478,
+74718
+],
+"tokens": [
+" Palm",
+" palm",
+" palms"
+]
+},
+{
+"word": "cypress",
+"plural": "cypresses",
+"category": "tree",
+"group": "tree",
+"phrase": "cypresses",
+"verb": "are",
+"ids": [
+79793
+],
+"tokens": [
+" Cypress"
+]
+},
+{
+"word": "bamboo",
+"plural": null,
+"category": "plant",
+"group": "tree",
+"phrase": "bamboo",
+"verb": "is",
+"ids": [
+58882,
+96928
+],
+"tokens": [
+" Bamboo",
+" bamboo"
+]
+},
+{
+"word": "rose",
+"plural": "roses",
+"category": "flower",
+"group": "tree",
+"phrase": "roses",
+"verb": "are",
+"ids": [
+15964,
+16009,
+60641,
+80370
+],
+"tokens": [
+" Rose",
+" Roses",
+" rose",
+" roses"
+]
+},
+{
+"word": "lily",
+"plural": "lilies",
+"category": "flower",
+"group": "tree",
+"phrase": "lilies",
+"verb": "are",
+"ids": [
+47290
+],
+"tokens": [
+" Lily"
+]
+},
+{
+"word": "red",
+"plural": null,
+"category": "color",
+"group": "color",
+"phrase": "red",
+"verb": "is",
+"ids": [
+2518,
+3731
+],
+"tokens": [
+" Red",
+" red"
+]
+},
+{
+"word": "blue",
+"plural": null,
+"category": "color",
+"group": "color",
+"phrase": "blue",
+"verb": "is",
+"ids": [
+6303,
+8697
+],
+"tokens": [
+" Blue",
+" blue"
+]
+},
+{
+"word": "green",
+"plural": null,
+"category": "color",
+"group": "color",
+"phrase": "green",
+"verb": "is",
+"ids": [
+6176,
+7840
+],
+"tokens": [
+" Green",
+" green"
+]
+},
+{
+"word": "yellow",
+"plural": null,
+"category": "color",
+"group": "color",
+"phrase": "yellow",
+"verb": "is",
+"ids": [
+13753,
+25462
+],
+"tokens": [
+" Yellow",
+" yellow"
+]
+},
+{
+"word": "orange",
+"plural": null,
+"category": "color",
+"group": "color",
+"phrase": "orange",
+"verb": "is",
+"ids": [
+18575,
+21958
+],
+"tokens": [
+" Orange",
+" orange"
+]
+},
+{
+"word": "purple",
+"plural": null,
+"category": "color",
+"group": "color",
+"phrase": "purple",
+"verb": "is",
+"ids": [
+24932,
+40389
+],
+"tokens": [
+" Purple",
+" purple"
+]
+},
+{
+"word": "pink",
+"plural": null,
+"category": "color",
+"group": "color",
+"phrase": "pink",
+"verb": "is",
+"ids": [
+18217,
+26119
+],
+"tokens": [
+" Pink",
+" pink"
+]
+},
+{
+"word": "black",
+"plural": null,
+"category": "color",
+"group": "color",
+"phrase": "black",
+"verb": "is",
+"ids": [
+3691,
+5235
+],
+"tokens": [
+" Black",
+" black"
+]
+},
+{
+"word": "white",
+"plural": null,
+"category": "color",
+"group": "color",
+"phrase": "white",
+"verb": "is",
+"ids": [
+4158,
+5807
+],
+"tokens": [
+" White",
+" white"
+]
+},
+{
+"word": "brown",
+"plural": null,
+"category": "color",
+"group": "color",
+"phrase": "brown",
+"verb": "is",
+"ids": [
+10471,
+13876
+],
+"tokens": [
+" Brown",
+" brown"
+]
+},
+{
+"word": "gray",
+"plural": null,
+"category": "color",
+"group": "color",
+"phrase": "gray",
+"verb": "is",
+"ids": [
+17545,
+23366
+],
+"tokens": [
+" Gray",
+" gray"
+]
+},
+{
+"word": "violet",
+"plural": null,
+"category": "color",
+"group": "color",
+"phrase": "violet",
+"verb": "is",
+"ids": [
+73474,
+79736
+],
+"tokens": [
+" Violet",
+" violet"
+]
+},
+{
+"word": "crimson",
+"plural": null,
+"category": "color",
+"group": "color",
+"phrase": "crimson",
+"verb": "is",
+"ids": [
+66077,
+96019
+],
+"tokens": [
+" Crimson",
+" crimson"
+]
+},
+{
+"word": "teal",
+"plural": null,
+"category": "color",
+"group": "color",
+"phrase": "teal",
+"verb": "is",
+"ids": [
+94607
+],
+"tokens": [
+" teal"
+]
+},
+{
+"word": "pizza",
+"plural": null,
+"category": "food",
+"group": "food",
+"phrase": "pizza",
+"verb": "is",
+"ids": [
+22502,
+34818
+],
+"tokens": [
+" Pizza",
+" pizza"
+]
+},
+{
+"word": "bread",
+"plural": null,
+"category": "food",
+"group": "food",
+"phrase": "bread",
+"verb": "is",
+"ids": [
+16002,
+49041
+],
+"tokens": [
+" Bread",
+" bread"
+]
+},
+{
+"word": "cheese",
+"plural": null,
+"category": "food",
+"group": "food",
+"phrase": "cheese",
+"verb": "is",
+"ids": [
+17163,
+44319
+],
+"tokens": [
+" Cheese",
+" cheese"
+]
+},
+{
+"word": "rice",
+"plural": null,
+"category": "food",
+"group": "food",
+"phrase": "rice",
+"verb": "is",
+"ids": [
+19653,
+29516
+],
+"tokens": [
+" Rice",
+" rice"
+]
+},
+{
+"word": "pasta",
+"plural": null,
+"category": "food",
+"group": "food",
+"phrase": "pasta",
+"verb": "is",
+"ids": [
+36447,
+97346
+],
+"tokens": [
+" Pasta",
+" pasta"
+]
+},
+{
+"word": "soup",
+"plural": null,
+"category": "food",
+"group": "food",
+"phrase": "soup",
+"verb": "is",
+"ids": [
+19174,
+60334
+],
+"tokens": [
+" Soup",
+" soup"
+]
+},
+{
+"word": "apple",
+"plural": "apples",
+"category": "fruit",
+"group": "food",
+"phrase": "apples",
+"verb": "are",
+"ids": [
+8162,
+23268,
+40676
+],
+"tokens": [
+" Apple",
+" apple",
+" apples"
+]
+},
+{
+"word": "banana",
+"plural": "bananas",
+"category": "fruit",
+"group": "food",
+"phrase": "bananas",
+"verb": "are",
+"ids": [
+43096,
+67342,
+75824
+],
+"tokens": [
+" Banana",
+" banana",
+" bananas"
+]
+},
+{
+"word": "grape",
+"plural": "grapes",
+"category": "fruit",
+"group": "food",
+"phrase": "grapes",
+"verb": "are",
+"ids": [
+51152,
+64908,
+79529
+],
+"tokens": [
+" Grape",
+" grape",
+" grapes"
+]
+},
+{
+"word": "lemon",
+"plural": "lemons",
+"category": "fruit",
+"group": "food",
+"phrase": "lemons",
+"verb": "are",
+"ids": [
+29464,
+51210
+],
+"tokens": [
+" Lemon",
+" lemon"
+]
+},
+{
+"word": "strawberry",
+"plural": "strawberries",
+"category": "fruit",
+"group": "food",
+"phrase": "strawberries",
+"verb": "are",
+"ids": [
+72600,
+75103,
+87977
+],
+"tokens": [
+" Strawberry",
+" strawberries",
+" strawberry"
+]
+},
+{
+"word": "mango",
+"plural": "mangoes",
+"category": "fruit",
+"group": "food",
+"phrase": "mangoes",
+"verb": "are",
+"ids": [
+69268,
+90863
+],
+"tokens": [
+" Mango",
+" mango"
+]
+},
+{
+"word": "peach",
+"plural": "peaches",
+"category": "fruit",
+"group": "food",
+"phrase": "peaches",
+"verb": "are",
+"ids": [
+63595,
+72088
+],
+"tokens": [
+" Peach",
+" peach"
+]
+},
+{
+"word": "cherry",
+"plural": "cherries",
+"category": "fruit",
+"group": "food",
+"phrase": "cherries",
+"verb": "are",
+"ids": [
+40880,
+44705
+],
+"tokens": [
+" Cherry",
+" cherry"
+]
+},
+{
+"word": "tomato",
+"plural": "tomatoes",
+"category": "vegetable",
+"group": "food",
+"phrase": "tomatoes",
+"verb": "are",
+"ids": [
+40513,
+41020,
+92991
+],
+"tokens": [
+" Tomato",
+" tomato",
+" tomatoes"
+]
+},
+{
+"word": "onion",
+"plural": "onions",
+"category": "vegetable",
+"group": "food",
+"phrase": "onions",
+"verb": "are",
+"ids": [
+37327,
+44597,
+85935
+],
+"tokens": [
+" Onion",
+" onion",
+" onions"
+]
+},
+{
+"word": "garlic",
+"plural": null,
+"category": "food",
+"group": "food",
+"phrase": "garlic",
+"verb": "is",
+"ids": [
+30635,
+94725
+],
+"tokens": [
+" Garlic",
+" garlic"
+]
+},
+{
+"word": "mushroom",
+"plural": "mushrooms",
+"category": "food",
+"group": "food",
+"phrase": "mushrooms",
+"verb": "are",
+"ids": [
+47151,
+57366,
+90197
+],
+"tokens": [
+" Mushroom",
+" mushroom",
+" mushrooms"
+]
+},
+{
+"word": "honey",
+"plural": null,
+"category": "food",
+"group": "food",
+"phrase": "honey",
+"verb": "is",
+"ids": [
+25744,
+39615
+],
+"tokens": [
+" Honey",
+" honey"
+]
+},
+{
+"word": "butter",
+"plural": null,
+"category": "food",
+"group": "food",
+"phrase": "butter",
+"verb": "is",
+"ids": [
+14100,
+30357
+],
+"tokens": [
+" Butter",
+" butter"
+]
+},
+{
+"word": "sugar",
+"plural": null,
+"category": "food",
+"group": "food",
+"phrase": "sugar",
+"verb": "is",
+"ids": [
+13163,
+30919
+],
+"tokens": [
+" Sugar",
+" sugar"
+]
+},
+{
+"word": "salt",
+"plural": null,
+"category": "food",
+"group": "food",
+"phrase": "salt",
+"verb": "is",
+"ids": [
+12021,
+27040
+],
+"tokens": [
+" Salt",
+" salt"
+]
+},
+{
+"word": "coffee",
+"plural": null,
+"category": "drink",
+"group": "food",
+"phrase": "coffee",
+"verb": "is",
+"ids": [
+10799,
+26079
+],
+"tokens": [
+" Coffee",
+" coffee"
+]
+},
+{
+"word": "tea",
+"plural": null,
+"category": "drink",
+"group": "food",
+"phrase": "tea",
+"verb": "is",
+"ids": [
+15243,
+30025
+],
+"tokens": [
+" Tea",
+" tea"
+]
+},
+{
+"word": "wine",
+"plural": null,
+"category": "drink",
+"group": "food",
+"phrase": "wine",
+"verb": "is",
+"ids": [
+13078,
+31826
+],
+"tokens": [
+" Wine",
+" wine"
+]
+},
+{
+"word": "beer",
+"plural": null,
+"category": "drink",
+"group": "food",
+"phrase": "beer",
+"verb": "is",
+"ids": [
+12883,
+33384
+],
+"tokens": [
+" Beer",
+" beer"
+]
+},
+{
+"word": "milk",
+"plural": null,
+"category": "drink",
+"group": "food",
+"phrase": "milk",
+"verb": "is",
+"ids": [
+14074,
+43825
+],
+"tokens": [
+" Milk",
+" milk"
+]
+},
+{
+"word": "egg",
+"plural": "eggs",
+"category": "food",
+"group": "food",
+"phrase": "eggs",
+"verb": "are",
+"ids": [
+18636,
+18805,
+41213,
+75792
+],
+"tokens": [
+" Egg",
+" Eggs",
+" egg",
+" eggs"
+]
+},
+{
+"word": "steak",
+"plural": null,
+"category": "food",
+"group": "food",
+"phrase": "steak",
+"verb": "is",
+"ids": [
+48959,
+84243
+],
+"tokens": [
+" Steak",
+" steak"
+]
+},
+{
+"word": "bacon",
+"plural": null,
+"category": "food",
+"group": "food",
+"phrase": "bacon",
+"verb": "is",
+"ids": [
+40352,
+61384
+],
+"tokens": [
+" Bacon",
+" bacon"
+]
+},
+{
+"word": "sushi",
+"plural": null,
+"category": "food",
+"group": "food",
+"phrase": "sushi",
+"verb": "is",
+"ids": [
+66222
+],
+"tokens": [
+" sushi"
+]
+},
+{
+"word": "burger",
+"plural": "burgers",
+"category": "food",
+"group": "food",
+"phrase": "burgers",
+"verb": "are",
+"ids": [
+44623,
+51771,
+62352
+],
+"tokens": [
+" Burger",
+" burger",
+" burgers"
+]
+},
+{
+"word": "car",
+"plural": "cars",
+"category": "object",
+"group": "object",
+"phrase": "cars",
+"verb": "are",
+"ids": [
+1803,
+3261,
+9331,
+35131
+],
+"tokens": [
+" Car",
+" Cars",
+" car",
+" cars"
+]
+},
+{
+"word": "train",
+"plural": "trains",
+"category": "object",
+"group": "object",
+"phrase": "trains",
+"verb": "are",
+"ids": [
+5426,
+26125,
+27688
+],
+"tokens": [
+" Train",
+" train",
+" trains"
+]
+},
+{
+"word": "bicycle",
+"plural": "bicycles",
+"category": "object",
+"group": "object",
+"phrase": "bicycles",
+"verb": "are",
+"ids": [
+34986,
+72861,
+78347
+],
+"tokens": [
+" Bicycle",
+" bicycle",
+" bicycles"
+]
+},
+{
+"word": "plane",
+"plural": "planes",
+"category": "object",
+"group": "object",
+"phrase": "planes",
+"verb": "are",
+"ids": [
+11031,
+24730,
+43044
+],
+"tokens": [
+" Plane",
+" plane",
+" planes"
+]
+},
+{
+"word": "rocket",
+"plural": "rockets",
+"category": "object",
+"group": "object",
+"phrase": "rockets",
+"verb": "are",
+"ids": [
+24306,
+39218,
+51998,
+60900
+],
+"tokens": [
+" Rocket",
+" Rockets",
+" rocket",
+" rockets"
+]
+},
+{
+"word": "clock",
+"plural": "clocks",
+"category": "object",
+"group": "object",
+"phrase": "clocks",
+"verb": "are",
+"ids": [
+8866,
+26142,
+50337
+],
+"tokens": [
+" Clock",
+" clock",
+" clocks"
+]
+},
+{
+"word": "watch",
+"plural": "watches",
+"category": "object",
+"group": "object",
+"phrase": "watches",
+"verb": "are",
+"ids": [
+3736,
+10357,
+31760,
+98260
+],
+"tokens": [
+" Watch",
+" Watches",
+" watch",
+" watches"
+]
+},
+{
+"word": "key",
+"plural": "keys",
+"category": "object",
+"group": "object",
+"phrase": "keys",
+"verb": "are",
+"ids": [
+1376,
+5309,
+6894,
+24133
+],
+"tokens": [
+" Key",
+" Keys",
+" key",
+" keys"
+]
+},
+{
+"word": "book",
+"plural": "books",
+"category": "object",
+"group": "object",
+"phrase": "books",
+"verb": "are",
+"ids": [
+2311,
+5893,
+6467,
+17833
+],
+"tokens": [
+" Book",
+" Books",
+" book",
+" books"
+]
+},
+{
+"word": "pen",
+"plural": "pens",
+"category": "object",
+"group": "object",
+"phrase": "pens",
+"verb": "are",
+"ids": [
+5750,
+13294,
+22601,
+63380
+],
+"tokens": [
+" Pen",
+" Pens",
+" pen",
+" pens"
+]
+},
+{
+"word": "pencil",
+"plural": "pencils",
+"category": "object",
+"group": "object",
+"phrase": "pencils",
+"verb": "are",
+"ids": [
+46118,
+96338
+],
+"tokens": [
+" pencil",
+" pencils"
+]
+},
+{
+"word": "lamp",
+"plural": "lamps",
+"category": "object",
+"group": "object",
+"phrase": "lamps",
+"verb": "are",
+"ids": [
+27962,
+41177,
+49452
+],
+"tokens": [
+" Lamp",
+" lamp",
+" lamps"
+]
+},
+{
+"word": "chair",
+"plural": "chairs",
+"category": "object",
+"group": "object",
+"phrase": "chairs",
+"verb": "are",
+"ids": [
+10496,
+16090,
+25904,
+68124
+],
+"tokens": [
+" Chair",
+" Chairs",
+" chair",
+" chairs"
+]
+},
+{
+"word": "table",
+"plural": "tables",
+"category": "object",
+"group": "object",
+"phrase": "tables",
+"verb": "are",
+"ids": [
+1965,
+6633,
+12632,
+42152
+],
+"tokens": [
+" Table",
+" Tables",
+" table",
+" tables"
+]
+},
+{
+"word": "door",
+"plural": "doors",
+"category": "object",
+"group": "object",
+"phrase": "doors",
+"verb": "are",
+"ids": [
+6006,
+14038,
+24191,
+49617
+],
+"tokens": [
+" Door",
+" Doors",
+" door",
+" doors"
+]
+},
+{
+"word": "window",
+"plural": "windows",
+"category": "object",
+"group": "object",
+"phrase": "windows",
+"verb": "are",
+"ids": [
+3241,
+5515,
+11030,
+13642
+],
+"tokens": [
+" Window",
+" Windows",
+" window",
+" windows"
+]
+},
+{
+"word": "mirror",
+"plural": "mirrors",
+"category": "object",
+"group": "object",
+"phrase": "mirrors",
+"verb": "are",
+"ids": [
+17846,
+33854,
+40485
+],
+"tokens": [
+" Mirror",
+" mirror",
+" mirrors"
+]
+},
+{
+"word": "phone",
+"plural": "phones",
+"category": "object",
+"group": "object",
+"phrase": "phones",
+"verb": "are",
+"ids": [
+4540,
+14307,
+17619,
+84575
+],
+"tokens": [
+" Phone",
+" Phones",
+" phone",
+" phones"
+]
+},
+{
+"word": "computer",
+"plural": "computers",
+"category": "object",
+"group": "object",
+"phrase": "computers",
+"verb": "are",
+"ids": [
+6366,
+17407,
+18495,
+68449
+],
+"tokens": [
+" Computer",
+" Computers",
+" computer",
+" computers"
+]
+},
+{
+"word": "camera",
+"plural": "cameras",
+"category": "object",
+"group": "object",
+"phrase": "cameras",
+"verb": "are",
+"ids": [
+6249,
+14332,
+18139,
+88770
+],
+"tokens": [
+" Camera",
+" Cameras",
+" camera",
+" cameras"
+]
+},
+{
+"word": "hammer",
+"plural": "hammers",
+"category": "object",
+"group": "object",
+"phrase": "hammers",
+"verb": "are",
+"ids": [
+23457,
+36894
+],
+"tokens": [
+" Hammer",
+" hammer"
+]
+},
+{
+"word": "sword",
+"plural": "swords",
+"category": "object",
+"group": "object",
+"phrase": "swords",
+"verb": "are",
+"ids": [
+20214,
+35651,
+52057,
+88351
+],
+"tokens": [
+" Sword",
+" Swords",
+" sword",
+" swords"
+]
+},
+{
+"word": "shield",
+"plural": "shields",
+"category": "object",
+"group": "object",
+"phrase": "shields",
+"verb": "are",
+"ids": [
+20245,
+29743,
+52665,
+74797
+],
+"tokens": [
+" Shield",
+" Shields",
+" shield",
+" shields"
+]
+},
+{
+"word": "crown",
+"plural": "crowns",
+"category": "object",
+"group": "object",
+"phrase": "crowns",
+"verb": "are",
+"ids": [
+26533,
+28643
+],
+"tokens": [
+" Crown",
+" crown"
+]
+},
+{
+"word": "ring",
+"plural": "rings",
+"category": "object",
+"group": "object",
+"phrase": "rings",
+"verb": "are",
+"ids": [
+10058,
+21525,
+24544,
+46280
+],
+"tokens": [
+" Ring",
+" Rings",
+" ring",
+" rings"
+]
+},
+{
+"word": "coin",
+"plural": "coins",
+"category": "object",
+"group": "object",
+"phrase": "coins",
+"verb": "are",
+"ids": [
+16254,
+18762,
+26233,
+61776
+],
+"tokens": [
+" Coin",
+" Coins",
+" coin",
+" coins"
+]
+},
+{
+"word": "candle",
+"plural": "candles",
+"category": "object",
+"group": "object",
+"phrase": "candles",
+"verb": "are",
+"ids": [
+37799,
+51205,
+72897
+],
+"tokens": [
+" Candle",
+" candle",
+" candles"
+]
+},
+{
+"word": "umbrella",
+"plural": "umbrellas",
+"category": "object",
+"group": "object",
+"phrase": "umbrellas",
+"verb": "are",
+"ids": [
+47898
+],
+"tokens": [
+" umbrella"
+]
+},
+{
+"word": "bottle",
+"plural": "bottles",
+"category": "object",
+"group": "object",
+"phrase": "bottles",
+"verb": "are",
+"ids": [
+16486,
+26376,
+53985
+],
+"tokens": [
+" Bottle",
+" bottle",
+" bottles"
+]
+},
+{
+"word": "cup",
+"plural": "cups",
+"category": "object",
+"group": "object",
+"phrase": "cups",
+"verb": "are",
+"ids": [
+10525,
+10861,
+25374,
+78106
+],
+"tokens": [
+" Cup",
+" Cups",
+" cup",
+" cups"
+]
+},
+{
+"word": "hat",
+"plural": "hats",
+"category": "object",
+"group": "object",
+"phrase": "hats",
+"verb": "are",
+"ids": [
+8896,
+21341,
+44426,
+90215
+],
+"tokens": [
+" Hat",
+" Hats",
+" hat",
+" hats"
+]
+},
+{
+"word": "ball",
+"plural": "balls",
+"category": "object",
+"group": "object",
+"phrase": "balls",
+"verb": "are",
+"ids": [
+4935,
+12836,
+20332,
+70603
+],
+"tokens": [
+" Ball",
+" Balls",
+" ball",
+" balls"
+]
+},
+{
+"word": "kite",
+"plural": "kites",
+"category": "object",
+"group": "object",
+"phrase": "kites",
+"verb": "are",
+"ids": [
+98119
+],
+"tokens": [
+" kite"
+]
+},
+{
+"word": "balloon",
+"plural": "balloons",
+"category": "object",
+"group": "object",
+"phrase": "balloons",
+"verb": "are",
+"ids": [
+46756,
+69480
+],
+"tokens": [
+" balloon",
+" balloons"
+]
+},
+{
+"word": "bell",
+"plural": "bells",
+"category": "object",
+"group": "object",
+"phrase": "bells",
+"verb": "are",
+"ids": [
+17884,
+28419,
+60694
+],
+"tokens": [
+" Bell",
+" bell",
+" bells"
+]
+},
+{
+"word": "ladder",
+"plural": "ladders",
+"category": "object",
+"group": "object",
+"phrase": "ladders",
+"verb": "are",
+"ids": [
+35765
+],
+"tokens": [
+" ladder"
+]
+},
+{
+"word": "rope",
+"plural": "ropes",
+"category": "object",
+"group": "object",
+"phrase": "ropes",
+"verb": "are",
+"ids": [
+33420,
+63946,
+97896
+],
+"tokens": [
+" Rope",
+" rope",
+" ropes"
+]
+},
+{
+"word": "flag",
+"plural": "flags",
+"category": "object",
+"group": "object",
+"phrase": "flags",
+"verb": "are",
+"ids": [
+5181,
+8042,
+22666,
+33205
+],
+"tokens": [
+" Flag",
+" Flags",
+" flag",
+" flags"
+]
+},
+{
+"word": "map",
+"plural": "maps",
+"category": "object",
+"group": "object",
+"phrase": "maps",
+"verb": "are",
+"ids": [
+2415,
+5027,
+14043,
+27408
+],
+"tokens": [
+" Map",
+" Maps",
+" map",
+" maps"
+]
+},
+{
+"word": "box",
+"plural": "boxes",
+"category": "object",
+"group": "object",
+"phrase": "boxes",
+"verb": "are",
+"ids": [
+3745,
+8261,
+14697,
+71267
+],
+"tokens": [
+" Box",
+" Boxes",
+" box",
+" boxes"
+]
+},
+{
+"word": "robot",
+"plural": "robots",
+"category": "object",
+"group": "object",
+"phrase": "robots",
+"verb": "are",
+"ids": [
+12305,
+25860,
+28707,
+96046
+],
+"tokens": [
+" Robot",
+" Robots",
+" robot",
+" robots"
+]
+},
+{
+"word": "France",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "France",
+"verb": "is",
+"ids": [
+9625,
+47587
+],
+"tokens": [
+" France",
+" france"
+]
+},
+{
+"word": "Japan",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "Japan",
+"verb": "is",
+"ids": [
+6323,
+54129
+],
+"tokens": [
+" Japan",
+" japan"
+]
+},
+{
+"word": "China",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "China",
+"verb": "is",
+"ids": [
+5616,
+32525
+],
+"tokens": [
+" China",
+" china"
+]
+},
+{
+"word": "India",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "India",
+"verb": "is",
+"ids": [
+6747,
+27711
+],
+"tokens": [
+" India",
+" india"
+]
+},
+{
+"word": "Brazil",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "Brazil",
+"verb": "is",
+"ids": [
+15948,
+96646
+],
+"tokens": [
+" Brazil",
+" brazil"
+]
+},
+{
+"word": "Canada",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "Canada",
+"verb": "is",
+"ids": [
+6864,
+31763
+],
+"tokens": [
+" Canada",
+" canada"
+]
+},
+{
+"word": "Mexico",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "Mexico",
+"verb": "is",
+"ids": [
+12270,
+76376
+],
+"tokens": [
+" Mexico",
+" mexico"
+]
+},
+{
+"word": "Egypt",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "Egypt",
+"verb": "is",
+"ids": [
+14867
+],
+"tokens": [
+" Egypt"
+]
+},
+{
+"word": "Italy",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "Italy",
+"verb": "is",
+"ids": [
+15344
+],
+"tokens": [
+" Italy"
+]
+},
+{
+"word": "Spain",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "Spain",
+"verb": "is",
+"ids": [
+17689
+],
+"tokens": [
+" Spain"
+]
+},
+{
+"word": "Germany",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "Germany",
+"verb": "is",
+"ids": [
+9856,
+82824
+],
+"tokens": [
+" Germany",
+" germany"
+]
+},
+{
+"word": "Russia",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "Russia",
+"verb": "is",
+"ids": [
+8359
+],
+"tokens": [
+" Russia"
+]
+},
+{
+"word": "Australia",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "Australia",
+"verb": "is",
+"ids": [
+8330,
+43232
+],
+"tokens": [
+" Australia",
+" australia"
+]
+},
+{
+"word": "Kenya",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "Kenya",
+"verb": "is",
+"ids": [
+36666
+],
+"tokens": [
+" Kenya"
+]
+},
+{
+"word": "Peru",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "Peru",
+"verb": "is",
+"ids": [
+47747,
+91859
+],
+"tokens": [
+" Peru",
+" peru"
+]
+},
+{
+"word": "Greece",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "Greece",
+"verb": "is",
+"ids": [
+24427
+],
+"tokens": [
+" Greece"
+]
+},
+{
+"word": "Ireland",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "Ireland",
+"verb": "is",
+"ids": [
+14648
+],
+"tokens": [
+" Ireland"
+]
+},
+{
+"word": "Norway",
+"plural": null,
+"category": "country",
+"group": "place",
+"phrase": "Norway",
+"verb": "is",
+"ids": [
+31503
+],
+"tokens": [
+" Norway"
+]
+},
+{
+"word": "Paris",
+"plural": null,
+"category": "city",
+"group": "place",
+"phrase": "Paris",
+"verb": "is",
+"ids": [
+12095,
+40858
+],
+"tokens": [
+" Paris",
+" paris"
+]
+},
+{
+"word": "London",
+"plural": null,
+"category": "city",
+"group": "place",
+"phrase": "London",
+"verb": "is",
+"ids": [
+7148,
+62046
+],
+"tokens": [
+" London",
+" london"
+]
+},
+{
+"word": "Tokyo",
+"plural": null,
+"category": "city",
+"group": "place",
+"phrase": "Tokyo",
+"verb": "is",
+"ids": [
+26194
+],
+"tokens": [
+" Tokyo"
+]
+},
+{
+"word": "Rome",
+"plural": null,
+"category": "city",
+"group": "place",
+"phrase": "Rome",
+"verb": "is",
+"ids": [
+21718
+],
+"tokens": [
+" Rome"
+]
+},
+{
+"word": "Berlin",
+"plural": null,
+"category": "city",
+"group": "place",
+"phrase": "Berlin",
+"verb": "is",
+"ids": [
+19846,
+44581
+],
+"tokens": [
+" Berlin",
+" berlin"
+]
+},
+{
+"word": "Moscow",
+"plural": null,
+"category": "city",
+"group": "place",
+"phrase": "Moscow",
+"verb": "is",
+"ids": [
+22415
+],
+"tokens": [
+" Moscow"
+]
+},
+{
+"word": "Chicago",
+"plural": null,
+"category": "city",
+"group": "place",
+"phrase": "Chicago",
+"verb": "is",
+"ids": [
+10557,
+92208
+],
+"tokens": [
+" Chicago",
+" chicago"
+]
+},
+{
+"word": "Texas",
+"plural": null,
+"category": "place",
+"group": "place",
+"phrase": "Texas",
+"verb": "is",
+"ids": [
+8257,
+59248
+],
+"tokens": [
+" Texas",
+" texas"
+]
+},
+{
+"word": "California",
+"plural": null,
+"category": "place",
+"group": "place",
+"phrase": "California",
+"verb": "is",
+"ids": [
+7043,
+78857
+],
+"tokens": [
+" California",
+" california"
+]
+},
+{
+"word": "Africa",
+"plural": null,
+"category": "continent",
+"group": "place",
+"phrase": "Africa",
+"verb": "is",
+"ids": [
+10174,
+44281
+],
+"tokens": [
+" Africa",
+" africa"
+]
+},
+{
+"word": "Europe",
+"plural": null,
+"category": "continent",
+"group": "place",
+"phrase": "Europe",
+"verb": "is",
+"ids": [
+4505,
+37534
+],
+"tokens": [
+" Europe",
+" europe"
+]
+},
+{
+"word": "Asia",
+"plural": null,
+"category": "continent",
+"group": "place",
+"phrase": "Asia",
+"verb": "is",
+"ids": [
+13622,
+83499
+],
+"tokens": [
+" Asia",
+" asia"
+]
+},
+{
+"word": "ocean",
+"plural": "oceans",
+"category": "place",
+"group": "place",
+"phrase": "oceans",
+"verb": "are",
+"ids": [
+17951,
+21575,
+53180
+],
+"tokens": [
+" Ocean",
+" ocean",
+" oceans"
+]
+},
+{
+"word": "mountain",
+"plural": "mountains",
+"category": "place",
+"group": "place",
+"phrase": "mountains",
+"verb": "are",
+"ids": [
+16301,
+18634,
+23501,
+40014
+],
+"tokens": [
+" Mountain",
+" Mountains",
+" mountain",
+" mountains"
+]
+},
+{
+"word": "desert",
+"plural": "deserts",
+"category": "place",
+"group": "place",
+"phrase": "deserts",
+"verb": "are",
+"ids": [
+23603,
+42186
+],
+"tokens": [
+" Desert",
+" desert"
+]
+},
+{
+"word": "forest",
+"plural": "forests",
+"category": "place",
+"group": "place",
+"phrase": "forests",
+"verb": "are",
+"ids": [
+13638,
+19988,
+35558
+],
+"tokens": [
+" Forest",
+" forest",
+" forests"
+]
+},
+{
+"word": "island",
+"plural": "islands",
+"category": "place",
+"group": "place",
+"phrase": "islands",
+"verb": "are",
+"ids": [
+10720,
+12922,
+22235,
+29000
+],
+"tokens": [
+" Island",
+" Islands",
+" island",
+" islands"
+]
+},
+{
+"word": "river",
+"plural": "rivers",
+"category": "place",
+"group": "place",
+"phrase": "rivers",
+"verb": "are",
+"ids": [
+10948,
+14796,
+35517,
+35639
+],
+"tokens": [
+" River",
+" Rivers",
+" river",
+" rivers"
+]
+},
+{
+"word": "beach",
+"plural": "beaches",
+"category": "place",
+"group": "place",
+"phrase": "beaches",
+"verb": "are",
+"ids": [
+11321,
+12721,
+34809
+],
+"tokens": [
+" Beach",
+" beach",
+" beaches"
+]
+},
+{
+"word": "castle",
+"plural": "castles",
+"category": "place",
+"group": "place",
+"phrase": "castles",
+"verb": "are",
+"ids": [
+26889,
+32584
+],
+"tokens": [
+" Castle",
+" castle"
+]
+},
+{
+"word": "village",
+"plural": "villages",
+"category": "place",
+"group": "place",
+"phrase": "villages",
+"verb": "are",
+"ids": [
+14126,
+24069,
+32789
+],
+"tokens": [
+" Village",
+" village",
+" villages"
+]
+},
+{
+"word": "moon",
+"plural": null,
+"category": "thing",
+"group": "place",
+"phrase": "the moon",
+"verb": "is",
+"ids": [
+17330,
+17788
+],
+"tokens": [
+" Moon",
+" moon"
+]
+},
+{
+"word": "sun",
+"plural": null,
+"category": "thing",
+"group": "place",
+"phrase": "the sun",
+"verb": "is",
+"ids": [
+7015,
+8059
+],
+"tokens": [
+" Sun",
+" sun"
+]
+},
+{
+"word": "star",
+"plural": "stars",
+"category": "thing",
+"group": "place",
+"phrase": "stars",
+"verb": "are",
+"ids": [
+6774,
+7679,
+9759,
+24651
+],
+"tokens": [
+" Star",
+" Stars",
+" star",
+" stars"
+]
+},
+{
+"word": "galaxy",
+"plural": "galaxies",
+"category": "thing",
+"group": "place",
+"phrase": "galaxies",
+"verb": "are",
+"ids": [
+19662,
+33161,
+64917
+],
+"tokens": [
+" Galaxy",
+" galaxies",
+" galaxy"
+]
+},
+{
+"word": "love",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "love",
+"verb": "is",
+"ids": [
+2948,
+10689
+],
+"tokens": [
+" Love",
+" love"
+]
+},
+{
+"word": "death",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "death",
+"verb": "is",
+"ids": [
+4545,
+15911
+],
+"tokens": [
+" Death",
+" death"
+]
+},
+{
+"word": "freedom",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "freedom",
+"verb": "is",
+"ids": [
+11290,
+24327
+],
+"tokens": [
+" Freedom",
+" freedom"
+]
+},
+{
+"word": "peace",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "peace",
+"verb": "is",
+"ids": [
+8919,
+25803
+],
+"tokens": [
+" Peace",
+" peace"
+]
+},
+{
+"word": "war",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "war",
+"verb": "is",
+"ids": [
+4116,
+5004
+],
+"tokens": [
+" War",
+" war"
+]
+},
+{
+"word": "justice",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "justice",
+"verb": "is",
+"ids": [
+11745,
+12161
+],
+"tokens": [
+" Justice",
+" justice"
+]
+},
+{
+"word": "truth",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "truth",
+"verb": "is",
+"ids": [
+8046,
+29098
+],
+"tokens": [
+" Truth",
+" truth"
+]
+},
+{
+"word": "beauty",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "beauty",
+"verb": "is",
+"ids": [
+13143,
+30585
+],
+"tokens": [
+" Beauty",
+" beauty"
+]
+},
+{
+"word": "time",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "time",
+"verb": "is",
+"ids": [
+882,
+4120
+],
+"tokens": [
+" Time",
+" time"
+]
+},
+{
+"word": "money",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "money",
+"verb": "is",
+"ids": [
+3220,
+17633
+],
+"tokens": [
+" Money",
+" money"
+]
+},
+{
+"word": "power",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "power",
+"verb": "is",
+"ids": [
+2355,
+7420
+],
+"tokens": [
+" Power",
+" power"
+]
+},
+{
+"word": "faith",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "faith",
+"verb": "is",
+"ids": [
+9881,
+32953
+],
+"tokens": [
+" Faith",
+" faith"
+]
+},
+{
+"word": "hope",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "hope",
+"verb": "is",
+"ids": [
+3900,
+17758
+],
+"tokens": [
+" Hope",
+" hope"
+]
+},
+{
+"word": "music",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "music",
+"verb": "is",
+"ids": [
+4627,
+10717
+],
+"tokens": [
+" Music",
+" music"
+]
+},
+{
+"word": "art",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "art",
+"verb": "is",
+"ids": [
+1947,
+5166
+],
+"tokens": [
+" Art",
+" art"
+]
+},
+{
+"word": "science",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "science",
+"verb": "is",
+"ids": [
+8038,
+9965
+],
+"tokens": [
+" Science",
+" science"
+]
+},
+{
+"word": "history",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "history",
+"verb": "is",
+"ids": [
+3840,
+11099
+],
+"tokens": [
+" History",
+" history"
+]
+},
+{
+"word": "nature",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "nature",
+"verb": "is",
+"ids": [
+6993,
+21331
+],
+"tokens": [
+" Nature",
+" nature"
+]
+},
+{
+"word": "silence",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "silence",
+"verb": "is",
+"ids": [
+21162,
+68088
+],
+"tokens": [
+" Silence",
+" silence"
+]
+},
+{
+"word": "darkness",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "darkness",
+"verb": "is",
+"ids": [
+26298,
+53696
+],
+"tokens": [
+" Darkness",
+" darkness"
+]
+},
+{
+"word": "light",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "light",
+"verb": "is",
+"ids": [
+3100,
+8658
+],
+"tokens": [
+" Light",
+" light"
+]
+},
+{
+"word": "chaos",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "chaos",
+"verb": "is",
+"ids": [
+26915,
+43105
+],
+"tokens": [
+" Chaos",
+" chaos"
+]
+},
+{
+"word": "magic",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "magic",
+"verb": "is",
+"ids": [
+10963,
+15485
+],
+"tokens": [
+" Magic",
+" magic"
+]
+},
+{
+"word": "wisdom",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "wisdom",
+"verb": "is",
+"ids": [
+23389,
+56101
+],
+"tokens": [
+" Wisdom",
+" wisdom"
+]
+},
+{
+"word": "knowledge",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "knowledge",
+"verb": "is",
+"ids": [
+6540,
+31925
+],
+"tokens": [
+" Knowledge",
+" knowledge"
+]
+},
+{
+"word": "dream",
+"plural": "dreams",
+"category": "thing",
+"group": "abstract",
+"phrase": "dreams",
+"verb": "are",
+"ids": [
+7904,
+17829,
+18707,
+52618
+],
+"tokens": [
+" Dream",
+" Dreams",
+" dream",
+" dreams"
+]
+},
+{
+"word": "memory",
+"plural": "memories",
+"category": "thing",
+"group": "abstract",
+"phrase": "memories",
+"verb": "are",
+"ids": [
+4938,
+13850,
+18923,
+86616
+],
+"tokens": [
+" Memories",
+" Memory",
+" memories",
+" memory"
+]
+},
+{
+"word": "fate",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "fate",
+"verb": "is",
+"ids": [
+24382,
+58925
+],
+"tokens": [
+" Fate",
+" fate"
+]
+},
+{
+"word": "danger",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "danger",
+"verb": "is",
+"ids": [
+7978,
+47299
+],
+"tokens": [
+" Danger",
+" danger"
+]
+},
+{
+"word": "success",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "success",
+"verb": "is",
+"ids": [
+2393,
+13047
+],
+"tokens": [
+" Success",
+" success"
+]
+},
+{
+"word": "honor",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "honor",
+"verb": "is",
+"ids": [
+15669,
+41944
+],
+"tokens": [
+" Honor",
+" honor"
+]
+},
+{
+"word": "glory",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "glory",
+"verb": "is",
+"ids": [
+25936,
+58161
+],
+"tokens": [
+" Glory",
+" glory"
+]
+},
+{
+"word": "revenge",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "revenge",
+"verb": "is",
+"ids": [
+36069,
+80549
+],
+"tokens": [
+" Revenge",
+" revenge"
+]
+},
+{
+"word": "kindness",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "kindness",
+"verb": "is",
+"ids": [
+44872
+],
+"tokens": [
+" kindness"
+]
+},
+{
+"word": "friendship",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "friendship",
+"verb": "is",
+"ids": [
+26509,
+72069
+],
+"tokens": [
+" Friendship",
+" friendship"
+]
+},
+{
+"word": "family",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "family",
+"verb": "is",
+"ids": [
+2997,
+12238
+],
+"tokens": [
+" Family",
+" family"
+]
+},
+{
+"word": "God",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "God",
+"verb": "is",
+"ids": [
+4264,
+9886
+],
+"tokens": [
+" God",
+" god"
+]
+},
+{
+"word": "heaven",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "heaven",
+"verb": "is",
+"ids": [
+22274,
+31350
+],
+"tokens": [
+" Heaven",
+" heaven"
+]
+},
+{
+"word": "hell",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "hell",
+"verb": "is",
+"ids": [
+14780,
+23887
+],
+"tokens": [
+" Hell",
+" hell"
+]
+},
+{
+"word": "fire",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "fire",
+"verb": "is",
+"ids": [
+3940,
+6647
+],
+"tokens": [
+" Fire",
+" fire"
+]
+},
+{
+"word": "water",
+"plural": null,
+"category": "thing",
+"group": "abstract",
+"phrase": "water",
+"verb": "is",
+"ids": [
+3015,
+9959
+],
+"tokens": [
+" Water",
+" water"
+]
+},
+{
+"word": "lime",
+"plural": "limes",
+"category": "fruit",
+"group": "toy",
+"phrase": "limes",
+"verb": "are",
+"ids": [
+41719,
+70496
+],
+"tokens": [
+" Lime",
+" lime"
+]
+},
+{
+"word": "mandarin",
+"plural": "mandarins",
+"category": "fruit",
+"group": "toy",
+"phrase": "mandarins",
+"verb": "are",
+"ids": [
+82771
+],
+"tokens": [
+" Mandarin"
+]
+},
+{
+"word": "January",
+"plural": null,
+"category": "month",
+"group": "toy",
+"phrase": "January",
+"verb": "is",
+"ids": [
+6058
+],
+"tokens": [
+" January"
+]
+},
+{
+"word": "February",
+"plural": null,
+"category": "month",
+"group": "toy",
+"phrase": "February",
+"verb": "is",
+"ids": [
+7400
+],
+"tokens": [
+" February"
+]
+},
+{
+"word": "March",
+"plural": null,
+"category": "month",
+"group": "toy",
+"phrase": "March",
+"verb": "is",
+"ids": [
+5470,
+15217
+],
+"tokens": [
+" March",
+" march"
+]
+},
+{
+"word": "April",
+"plural": null,
+"category": "month",
+"group": "toy",
+"phrase": "April",
+"verb": "is",
+"ids": [
+5813,
+73700
+],
+"tokens": [
+" April",
+" april"
+]
+},
+{
+"word": "June",
+"plural": null,
+"category": "month",
+"group": "toy",
+"phrase": "June",
+"verb": "is",
+"ids": [
+5534
+],
+"tokens": [
+" June"
+]
+},
+{
+"word": "July",
+"plural": null,
+"category": "month",
+"group": "toy",
+"phrase": "July",
+"verb": "is",
+"ids": [
+5768
+],
+"tokens": [
+" July"
+]
+},
+{
+"word": "August",
+"plural": null,
+"category": "month",
+"group": "toy",
+"phrase": "August",
+"verb": "is",
+"ids": [
+6156,
+70619
+],
+"tokens": [
+" August",
+" august"
+]
+},
+{
+"word": "September",
+"plural": null,
+"category": "month",
+"group": "toy",
+"phrase": "September",
+"verb": "is",
+"ids": [
+6122,
+83649
+],
+"tokens": [
+" September",
+" september"
+]
+},
+{
+"word": "October",
+"plural": null,
+"category": "month",
+"group": "toy",
+"phrase": "October",
+"verb": "is",
+"ids": [
+6527
+],
+"tokens": [
+" October"
+]
+},
+{
+"word": "November",
+"plural": null,
+"category": "month",
+"group": "toy",
+"phrase": "November",
+"verb": "is",
+"ids": [
+6702,
+84223
+],
+"tokens": [
+" November",
+" november"
+]
+},
+{
+"word": "December",
+"plural": null,
+"category": "month",
+"group": "toy",
+"phrase": "December",
+"verb": "is",
+"ids": [
+6652,
+89011
+],
+"tokens": [
+" December",
+" december"
+]
+},
+{
+"word": "Monday",
+"plural": "Mondays",
+"category": "day of the week",
+"group": "toy",
+"phrase": "Mondays",
+"verb": "are",
+"ids": [
+7014,
+90171,
+93199
+],
+"tokens": [
+" Monday",
+" Mondays",
+" monday"
+]
+},
+{
+"word": "Tuesday",
+"plural": "Tuesdays",
+"category": "day of the week",
+"group": "toy",
+"phrase": "Tuesdays",
+"verb": "are",
+"ids": [
+7589
+],
+"tokens": [
+" Tuesday"
+]
+},
+{
+"word": "Wednesday",
+"plural": "Wednesdays",
+"category": "day of the week",
+"group": "toy",
+"phrase": "Wednesdays",
+"verb": "are",
+"ids": [
+7920
+],
+"tokens": [
+" Wednesday"
+]
+},
+{
+"word": "Thursday",
+"plural": "Thursdays",
+"category": "day of the week",
+"group": "toy",
+"phrase": "Thursdays",
+"verb": "are",
+"ids": [
+7794
+],
+"tokens": [
+" Thursday"
+]
+},
+{
+"word": "Friday",
+"plural": "Fridays",
+"category": "day of the week",
+"group": "toy",
+"phrase": "Fridays",
+"verb": "are",
+"ids": [
+6602,
+79313,
+79423
+],
+"tokens": [
+" Friday",
+" Fridays",
+" friday"
+]
+},
+{
+"word": "Saturday",
+"plural": "Saturdays",
+"category": "day of the week",
+"group": "toy",
+"phrase": "Saturdays",
+"verb": "are",
+"ids": [
+7728,
+75214
+],
+"tokens": [
+" Saturday",
+" Saturdays"
+]
+},
+{
+"word": "Sunday",
+"plural": "Sundays",
+"category": "day of the week",
+"group": "toy",
+"phrase": "Sundays",
+"verb": "are",
+"ids": [
+7270,
+61080,
+92363
+],
+"tokens": [
+" Sunday",
+" Sundays",
+" sunday"
+]
+},
+{
+"word": "Mercury",
+"plural": null,
+"category": "planet",
+"group": "toy",
+"phrase": "Mercury",
+"verb": "is",
+"ids": [
+43562,
+50752
+],
+"tokens": [
+" Mercury",
+" mercury"
+]
+},
+{
+"word": "Venus",
+"plural": null,
+"category": "planet",
+"group": "toy",
+"phrase": "Venus",
+"verb": "is",
+"ids": [
+48976
+],
+"tokens": [
+" Venus"
+]
+},
+{
+"word": "Earth",
+"plural": null,
+"category": "planet",
+"group": "toy",
+"phrase": "Earth",
+"verb": "is",
+"ids": [
+9237,
+9393
+],
+"tokens": [
+" Earth",
+" earth"
+]
+},
+{
+"word": "Mars",
+"plural": null,
+"category": "planet",
+"group": "toy",
+"phrase": "Mars",
+"verb": "is",
+"ids": [
+21048,
+47349
+],
+"tokens": [
+" Mars",
+" mars"
+]
+},
+{
+"word": "Jupiter",
+"plural": null,
+"category": "planet",
+"group": "toy",
+"phrase": "Jupiter",
+"verb": "is",
+"ids": [
+49689
+],
+"tokens": [
+" Jupiter"
+]
+},
+{
+"word": "Saturn",
+"plural": null,
+"category": "planet",
+"group": "toy",
+"phrase": "Saturn",
+"verb": "is",
+"ids": [
+49153,
+84689
+],
+"tokens": [
+" Saturn",
+" saturn"
+]
+},
+{
+"word": "Neptune",
+"plural": null,
+"category": "planet",
+"group": "toy",
+"phrase": "Neptune",
+"verb": "is",
+"ids": [
+79624
+],
+"tokens": [
+" Neptune"
+]
+},
+{
+"word": "knight",
+"plural": "knights",
+"category": "chess piece",
+"group": "toy",
+"phrase": "knights",
+"verb": "are",
+"ids": [
+22984,
+39576,
+46609,
+70530
+],
+"tokens": [
+" Knight",
+" Knights",
+" knight",
+" knights"
+]
+},
+{
+"word": "bishop",
+"plural": "bishops",
+"category": "chess piece",
+"group": "toy",
+"phrase": "bishops",
+"verb": "are",
+"ids": [
+33242,
+53206,
+65623
+],
+"tokens": [
+" Bishop",
+" bishop",
+" bishops"
+]
+},
+{
+"word": "queen",
+"plural": "queens",
+"category": "chess piece",
+"group": "toy",
+"phrase": "queens",
+"verb": "are",
+"ids": [
+16259,
+27063,
+27906,
+68997
+],
+"tokens": [
+" Queen",
+" Queens",
+" queen",
+" queens"
+]
+},
+{
+"word": "king",
+"plural": "kings",
+"category": "chess piece",
+"group": "toy",
+"phrase": "kings",
+"verb": "are",
+"ids": [
+6210,
+11477,
+24019,
+44519
+],
+"tokens": [
+" King",
+" Kings",
+" king",
+" kings"
+]
+},
+{
+"word": "gold",
+"plural": null,
+"category": "metal",
+"group": "toy",
+"phrase": "gold",
+"verb": "is",
+"ids": [
+6623,
+7421
+],
+"tokens": [
+" Gold",
+" gold"
+]
+},
+{
+"word": "silver",
+"plural": null,
+"category": "metal",
+"group": "toy",
+"phrase": "silver",
+"verb": "is",
+"ids": [
+14961,
+14997
+],
+"tokens": [
+" Silver",
+" silver"
+]
+},
+{
+"word": "platinum",
+"plural": null,
+"category": "metal",
+"group": "toy",
+"phrase": "platinum",
+"verb": "is",
+"ids": [
+43992,
+62227
+],
+"tokens": [
+" Platinum",
+" platinum"
+]
+},
+{
+"word": "copper",
+"plural": null,
+"category": "metal",
+"group": "toy",
+"phrase": "copper",
+"verb": "is",
+"ids": [
+23285,
+42540
+],
+"tokens": [
+" Copper",
+" copper"
+]
+},
+{
+"word": "bronze",
+"plural": null,
+"category": "metal",
+"group": "toy",
+"phrase": "bronze",
+"verb": "is",
+"ids": [
+39807,
+44867
+],
+"tokens": [
+" Bronze",
+" bronze"
+]
+},
+{
+"word": "iron",
+"plural": null,
+"category": "metal",
+"group": "toy",
+"phrase": "iron",
+"verb": "is",
+"ids": [
+11001,
+16570
+],
+"tokens": [
+" Iron",
+" iron"
+]
+},
+{
+"word": "steel",
+"plural": null,
+"category": "metal",
+"group": "toy",
+"phrase": "steel",
+"verb": "is",
+"ids": [
+9509,
+12500
+],
+"tokens": [
+" Steel",
+" steel"
+]
+},
+{
+"word": "diamond",
+"plural": "diamonds",
+"category": "gemstone",
+"group": "toy",
+"phrase": "diamonds",
+"verb": "are",
+"ids": [
+22205,
+24334,
+48051,
+90110
+],
+"tokens": [
+" Diamond",
+" Diamonds",
+" diamond",
+" diamonds"
+]
+},
+{
+"word": "ruby",
+"plural": "rubies",
+"category": "gemstone",
+"group": "toy",
+"phrase": "rubies",
+"verb": "are",
+"ids": [
+23726,
+45207
+],
+"tokens": [
+" Ruby",
+" ruby"
+]
+},
+{
+"word": "emerald",
+"plural": "emeralds",
+"category": "gemstone",
+"group": "toy",
+"phrase": "emeralds",
+"verb": "are",
+"ids": [
+63096
+],
+"tokens": [
+" Emerald"
+]
+},
+{
+"word": "pearl",
+"plural": "pearls",
+"category": "gemstone",
+"group": "toy",
+"phrase": "pearls",
+"verb": "are",
+"ids": [
+36243,
+69623,
+91632
+],
+"tokens": [
+" Pearl",
+" pearl",
+" pearls"
+]
+},
+{
+"word": "jade",
+"plural": null,
+"category": "gemstone",
+"group": "toy",
+"phrase": "jade",
+"verb": "is",
+"ids": [
+57527,
+85015
+],
+"tokens": [
+" Jade",
+" jade"
+]
+},
+{
+"word": "gem",
+"plural": "gems",
+"category": "thing",
+"group": "toy",
+"phrase": "gems",
+"verb": "are",
+"ids": [
+18747,
+31145,
+42158,
+81072
+],
+"tokens": [
+" Gem",
+" Gems",
+" gem",
+" gems"
+]
+},
+{
+"word": "cow",
+"plural": "cows",
+"category": "farm animal",
+"group": "toy",
+"phrase": "cows",
+"verb": "are",
+"ids": [
+19362,
+21851,
+45166
+],
+"tokens": [
+" Cow",
+" cow",
+" cows"
+]
+},
+{
+"word": "pig",
+"plural": "pigs",
+"category": "farm animal",
+"group": "toy",
+"phrase": "pigs",
+"verb": "are",
+"ids": [
+23694,
+48554,
+48810
+],
+"tokens": [
+" Pig",
+" pig",
+" pigs"
+]
+},
+{
+"word": "horse",
+"plural": "horses",
+"category": "farm animal",
+"group": "toy",
+"phrase": "horses",
+"verb": "are",
+"ids": [
+15223,
+26830,
+33292
+],
+"tokens": [
+" Horse",
+" horse",
+" horses"
+]
+},
+{
+"word": "sheep",
+"plural": "sheep",
+"category": "farm animal",
+"group": "toy",
+"phrase": "sheep",
+"verb": "are",
+"ids": [
+31912,
+82908
+],
+"tokens": [
+" Sheep",
+" sheep"
+]
+},
+{
+"word": "chicken",
+"plural": "chickens",
+"category": "farm animal",
+"group": "toy",
+"phrase": "chickens",
+"verb": "are",
+"ids": [
+16158,
+33519,
+53523
+],
+"tokens": [
+" Chicken",
+" chicken",
+" chickens"
+]
+},
+{
+"word": "duck",
+"plural": "ducks",
+"category": "farm animal",
+"group": "toy",
+"phrase": "ducks",
+"verb": "are",
+"ids": [
+35985,
+45770,
+67782,
+77778
+],
+"tokens": [
+" Duck",
+" Ducks",
+" duck",
+" ducks"
+]
+},
+{
+"word": "piano",
+"plural": "pianos",
+"category": "musical instrument",
+"group": "toy",
+"phrase": "pianos",
+"verb": "are",
+"ids": [
+26278,
+55391
+],
+"tokens": [
+" Piano",
+" piano"
+]
+},
+{
+"word": "guitar",
+"plural": "guitars",
+"category": "musical instrument",
+"group": "toy",
+"phrase": "guitars",
+"verb": "are",
+"ids": [
+16986,
+46659,
+59494
+],
+"tokens": [
+" Guitar",
+" guitar",
+" guitars"
+]
+},
+{
+"word": "violin",
+"plural": "violins",
+"category": "musical instrument",
+"group": "toy",
+"phrase": "violins",
+"verb": "are",
+"ids": [
+62037
+],
+"tokens": [
+" violin"
+]
+},
+{
+"word": "drum",
+"plural": "drums",
+"category": "musical instrument",
+"group": "toy",
+"phrase": "drums",
+"verb": "are",
+"ids": [
+23196,
+45406,
+46289
+],
+"tokens": [
+" Drum",
+" drum",
+" drums"
+]
+},
+{
+"word": "trumpet",
+"plural": "trumpets",
+"category": "musical instrument",
+"group": "toy",
+"phrase": "trumpets",
+"verb": "are",
+"ids": [
+91259
+],
+"tokens": [
+" trumpet"
+]
+},
+{
+"word": "rain",
+"plural": null,
+"category": "weather",
+"group": "toy",
+"phrase": "rain",
+"verb": "is",
+"ids": [
+11174,
+21911
+],
+"tokens": [
+" Rain",
+" rain"
+]
+},
+{
+"word": "snow",
+"plural": null,
+"category": "weather",
+"group": "toy",
+"phrase": "snow",
+"verb": "is",
+"ids": [
+11794,
+18901
+],
+"tokens": [
+" Snow",
+" snow"
+]
+},
+{
+"word": "wind",
+"plural": null,
+"category": "weather",
+"group": "toy",
+"phrase": "wind",
+"verb": "is",
+"ids": [
+9956,
+22087
+],
+"tokens": [
+" Wind",
+" wind"
+]
+},
+{
+"word": "fog",
+"plural": null,
+"category": "weather",
+"group": "toy",
+"phrase": "fog",
+"verb": "is",
+"ids": [
+30249,
+58148
+],
+"tokens": [
+" Fog",
+" fog"
+]
+},
+{
+"word": "thunder",
+"plural": null,
+"category": "weather",
+"group": "toy",
+"phrase": "thunder",
+"verb": "is",
+"ids": [
+26691,
+36843
+],
+"tokens": [
+" Thunder",
+" thunder"
+]
+},
+{
+"word": "lightning",
+"plural": null,
+"category": "weather",
+"group": "toy",
+"phrase": "lightning",
+"verb": "is",
+"ids": [
+32438,
+33844
+],
+"tokens": [
+" Lightning",
+" lightning"
+]
+},
+{
+"word": "cloudy",
+"plural": null,
+"category": "weather",
+"group": "toy",
+"phrase": "cloudy weather",
+"verb": "is",
+"ids": [
+73549
+],
+"tokens": [
+" cloudy"
+]
+},
+{
+"word": "sunny",
+"plural": null,
+"category": "weather",
+"group": "toy",
+"phrase": "sunny weather",
+"verb": "is",
+"ids": [
+39698,
+55038
+],
+"tokens": [
+" Sunny",
+" sunny"
+]
+},
+{
+"word": "arm",
+"plural": "arms",
+"category": "body part",
+"group": "toy",
+"phrase": "arms",
+"verb": "are",
+"ids": [
+6773,
+11715,
+12990,
+43616
+],
+"tokens": [
+" Arm",
+" Arms",
+" arm",
+" arms"
+]
+},
+{
+"word": "leg",
+"plural": "legs",
+"category": "body part",
+"group": "toy",
+"phrase": "legs",
+"verb": "are",
+"ids": [
+2472,
+7610,
+14201,
+89934
+],
+"tokens": [
+" Leg",
+" Legs",
+" leg",
+" legs"
+]
+},
+{
+"word": "hand",
+"plural": "hands",
+"category": "body part",
+"group": "toy",
+"phrase": "hands",
+"verb": "are",
+"ids": [
+1424,
+6078,
+8536,
+42296
+],
+"tokens": [
+" Hand",
+" Hands",
+" hand",
+" hands"
+]
+},
+{
+"word": "foot",
+"plural": "feet",
+"category": "body part",
+"group": "toy",
+"phrase": "feet",
+"verb": "are",
+"ids": [
+4478,
+7541,
+15455,
+61189
+],
+"tokens": [
+" Feet",
+" Foot",
+" feet",
+" foot"
+]
+},
+{
+"word": "head",
+"plural": "heads",
+"category": "body part",
+"group": "toy",
+"phrase": "heads",
+"verb": "are",
+"ids": [
+1968,
+11203,
+14629,
+70507
+],
+"tokens": [
+" Head",
+" Heads",
+" head",
+" heads"
+]
+},
+{
+"word": "neck",
+"plural": "necks",
+"category": "body part",
+"group": "toy",
+"phrase": "necks",
+"verb": "are",
+"ids": [
+12975,
+42955
+],
+"tokens": [
+" Neck",
+" neck"
+]
+},
+{
+"word": "shoulder",
+"plural": "shoulders",
+"category": "body part",
+"group": "toy",
+"phrase": "shoulders",
+"verb": "are",
+"ids": [
+16882,
+26906,
+79772
+],
+"tokens": [
+" Shoulder",
+" shoulder",
+" shoulders"
+]
+},
+{
+"word": "knee",
+"plural": "knees",
+"category": "body part",
+"group": "toy",
+"phrase": "knees",
+"verb": "are",
+"ids": [
+21381,
+30524,
+97212
+],
+"tokens": [
+" Knee",
+" knee",
+" knees"
+]
+},
+{
+"word": "finger",
+"plural": "fingers",
+"category": "body part",
+"group": "toy",
+"phrase": "fingers",
+"verb": "are",
+"ids": [
+14317,
+19225,
+62861
+],
+"tokens": [
+" Finger",
+" finger",
+" fingers"
+]
+},
+{
+"word": "eye",
+"plural": "eyes",
+"category": "body part",
+"group": "toy",
+"phrase": "eyes",
+"verb": "are",
+"ids": [
+6414,
+7912,
+27829,
+41996
+],
+"tokens": [
+" Eye",
+" Eyes",
+" eye",
+" eyes"
+]
+},
+{
+"word": "ear",
+"plural": "ears",
+"category": "body part",
+"group": "toy",
+"phrase": "ears",
+"verb": "are",
+"ids": [
+2430,
+6809,
+24230
+],
+"tokens": [
+" Ear",
+" ear",
+" ears"
+]
+},
+{
+"word": "nose",
+"plural": "noses",
+"category": "body part",
+"group": "toy",
+"phrase": "noses",
+"verb": "are",
+"ids": [
+19142,
+92123,
+96714
+],
+"tokens": [
+" Nose",
+" nose",
+" noses"
+]
+},
+{
+"word": "carrot",
+"plural": "carrots",
+"category": "vegetable",
+"group": "toy",
+"phrase": "carrots",
+"verb": "are",
+"ids": [
+61417,
+74194
+],
+"tokens": [
+" carrot",
+" carrots"
+]
+},
+{
+"word": "potato",
+"plural": "potatoes",
+"category": "vegetable",
+"group": "toy",
+"phrase": "potatoes",
+"verb": "are",
+"ids": [
+34167,
+38734,
+77603
+],
+"tokens": [
+" Potato",
+" potato",
+" potatoes"
+]
+},
+{
+"word": "corn",
+"plural": null,
+"category": "vegetable",
+"group": "toy",
+"phrase": "corn",
+"verb": "is",
+"ids": [
+13776,
+21330
+],
+"tokens": [
+" Corn",
+" corn"
+]
+},
+{
+"word": "bean",
+"plural": "beans",
+"category": "vegetable",
+"group": "toy",
+"phrase": "beans",
+"verb": "are",
+"ids": [
+20427,
+26896,
+33723,
+80736
+],
+"tokens": [
+" Bean",
+" Beans",
+" bean",
+" beans"
+]
+},
+{
+"word": "lettuce",
+"plural": null,
+"category": "vegetable",
+"group": "toy",
+"phrase": "lettuce",
+"verb": "is",
+"ids": [
+70555
+],
+"tokens": [
+" lettuce"
+]
+},
+{
+"word": "pepper",
+"plural": "peppers",
+"category": "vegetable",
+"group": "toy",
+"phrase": "peppers",
+"verb": "are",
+"ids": [
+24353,
+51782,
+57473
+],
+"tokens": [
+" Pepper",
+" pepper",
+" peppers"
+]
+},
+{
+"word": "spinach",
+"plural": null,
+"category": "vegetable",
+"group": "toy",
+"phrase": "spinach",
+"verb": "is",
+"ids": [
+67698
+],
+"tokens": [
+" spinach"
+]
+},
+{
+"word": "heart",
+"plural": "hearts",
+"category": "card suit",
+"group": "toy",
+"phrase": "hearts",
+"verb": "are",
+"ids": [
+4746,
+17965,
+22662,
+52776
+],
+"tokens": [
+" Heart",
+" Hearts",
+" heart",
+" hearts"
+]
+},
+{
+"word": "club",
+"plural": "clubs",
+"category": "card suit",
+"group": "toy",
+"phrase": "clubs",
+"verb": "are",
+"ids": [
+6335,
+10140,
+18890,
+69032
+],
+"tokens": [
+" Club",
+" Clubs",
+" club",
+" clubs"
+]
+},
+{
+"word": "ace",
+"plural": "aces",
+"category": "card",
+"group": "toy",
+"phrase": "aces",
+"verb": "are",
+"ids": [
+26747,
+37707
+],
+"tokens": [
+" Ace",
+" ace"
+]
+},
+{
+"word": "whale",
+"plural": "whales",
+"category": "ocean creature",
+"group": "toy",
+"phrase": "whales",
+"verb": "are",
+"ids": [
+50019,
+56774,
+96002
+],
+"tokens": [
+" Whale",
+" whale",
+" whales"
+]
+},
+{
+"word": "shark",
+"plural": "sharks",
+"category": "ocean creature",
+"group": "toy",
+"phrase": "sharks",
+"verb": "are",
+"ids": [
+43792,
+60435,
+60436,
+70823
+],
+"tokens": [
+" Shark",
+" Sharks",
+" shark",
+" sharks"
+]
+},
+{
+"word": "dolphin",
+"plural": "dolphins",
+"category": "ocean creature",
+"group": "toy",
+"phrase": "dolphins",
+"verb": "are",
+"ids": [
+53712,
+82406,
+94996,
+98169
+],
+"tokens": [
+" Dolphin",
+" Dolphins",
+" dolphin",
+" dolphins"
+]
+},
+{
+"word": "seal",
+"plural": "seals",
+"category": "ocean creature",
+"group": "toy",
+"phrase": "seals",
+"verb": "are",
+"ids": [
+25349,
+52525,
+56777
+],
+"tokens": [
+" Seal",
+" seal",
+" seals"
+]
+},
+{
+"word": "fish",
+"plural": "fish",
+"category": "ocean creature",
+"group": "toy",
+"phrase": "fish",
+"verb": "are",
+"ids": [
+7640,
+16608
+],
+"tokens": [
+" Fish",
+" fish"
+]
+},
+{
+"word": "oak",
+"plural": "oaks",
+"category": "tree",
+"group": "toy",
+"phrase": "oaks",
+"verb": "are",
+"ids": [
+18283,
+37871,
+74256
+],
+"tokens": [
+" Oak",
+" Oaks",
+" oak"
+]
+},
+{
+"word": "pine",
+"plural": "pines",
+"category": "tree",
+"group": "toy",
+"phrase": "pines",
+"verb": "are",
+"ids": [
+33597,
+41509
+],
+"tokens": [
+" Pine",
+" pine"
+]
+},
+{
+"word": "maple",
+"plural": "maples",
+"category": "tree",
+"group": "toy",
+"phrase": "maples",
+"verb": "are",
+"ids": [
+43470,
+54380
+],
+"tokens": [
+" Maple",
+" maple"
+]
+},
+{
+"word": "cedar",
+"plural": "cedars",
+"category": "tree",
+"group": "toy",
+"phrase": "cedars",
+"verb": "are",
+"ids": [
+56648,
+75296
+],
+"tokens": [
+" Cedar",
+" cedar"
+]
+},
+{
+"word": "elm",
+"plural": "elms",
+"category": "tree",
+"group": "toy",
+"phrase": "elms",
+"verb": "are",
+"ids": [
+42205,
+64229
+],
+"tokens": [
+" Elm",
+" elm"
+]
+},
+{
+"word": "fork",
+"plural": "forks",
+"category": "kitchen utensil",
+"group": "toy",
+"phrase": "forks",
+"verb": "are",
+"ids": [
+22435,
+47850,
+73574
+],
+"tokens": [
+" Fork",
+" fork",
+" forks"
+]
+},
+{
+"word": "knife",
+"plural": "knives",
+"category": "kitchen utensil",
+"group": "toy",
+"phrase": "knives",
+"verb": "are",
+"ids": [
+21430,
+48895,
+61202
+],
+"tokens": [
+" Knife",
+" knife",
+" knives"
+]
+},
+{
+"word": "bowl",
+"plural": "bowls",
+"category": "kitchen utensil",
+"group": "toy",
+"phrase": "bowls",
+"verb": "are",
+"ids": [
+19212,
+20288,
+59980
+],
+"tokens": [
+" Bowl",
+" bowl",
+" bowls"
+]
+},
+{
+"word": "plate",
+"plural": "plates",
+"category": "kitchen utensil",
+"group": "toy",
+"phrase": "plates",
+"verb": "are",
+"ids": [
+11968,
+24477,
+30303,
+79293
+],
+"tokens": [
+" Plate",
+" Plates",
+" plate",
+" plates"
+]
+},
+{
+"word": "pan",
+"plural": "pans",
+"category": "kitchen utensil",
+"group": "toy",
+"phrase": "pans",
+"verb": "are",
+"ids": [
+7215,
+10990,
+63783
+],
+"tokens": [
+" Pan",
+" pan",
+" pans"
+]
+},
+{
+"word": "joy",
+"plural": null,
+"category": "emotion",
+"group": "toy",
+"phrase": "joy",
+"verb": "is",
+"ids": [
+15888,
+27138
+],
+"tokens": [
+" Joy",
+" joy"
+]
+},
+{
+"word": "anger",
+"plural": null,
+"category": "emotion",
+"group": "toy",
+"phrase": "anger",
+"verb": "is",
+"ids": [
+19234
+],
+"tokens": [
+" anger"
+]
+},
+{
+"word": "fear",
+"plural": null,
+"category": "emotion",
+"group": "toy",
+"phrase": "fear",
+"verb": "is",
+"ids": [
+8679,
+41967
+],
+"tokens": [
+" Fear",
+" fear"
+]
+},
+{
+"word": "disgust",
+"plural": null,
+"category": "emotion",
+"group": "toy",
+"phrase": "disgust",
+"verb": "is",
+"ids": [
+67062
+],
+"tokens": [
+" disgust"
+]
+},
+{
+"word": "surprise",
+"plural": null,
+"category": "emotion",
+"group": "toy",
+"phrase": "surprise",
+"verb": "is",
+"ids": [
+12761,
+84484
+],
+"tokens": [
+" Surprise",
+" surprise"
+]
+},
+{
+"word": "happiness",
+"plural": null,
+"category": "emotion",
+"group": "toy",
+"phrase": "happiness",
+"verb": "is",
+"ids": [
+23009,
+78144
+],
+"tokens": [
+" Happiness",
+" happiness"
+]
+},
+{
+"word": "grief",
+"plural": null,
+"category": "emotion",
+"group": "toy",
+"phrase": "grief",
+"verb": "is",
+"ids": [
+37284
+],
+"tokens": [
+" grief"
+]
+},
+{
+"word": "shame",
+"plural": null,
+"category": "emotion",
+"group": "toy",
+"phrase": "shame",
+"verb": "is",
+"ids": [
+20973,
+87535
+],
+"tokens": [
+" Shame",
+" shame"
+]
+},
+{
+"word": "sad",
+"plural": null,
+"category": "feeling",
+"group": "toy",
+"phrase": "being sad",
+"verb": "is",
+"ids": [
+12421,
+30681
+],
+"tokens": [
+" Sad",
+" sad"
+]
+},
+{
+"word": "happy",
+"plural": null,
+"category": "feeling",
+"group": "toy",
+"phrase": "being happy",
+"verb": "is",
+"ids": [
+6247,
+23355
+],
+"tokens": [
+" Happy",
+" happy"
+]
+},
+{
+"word": "angry",
+"plural": null,
+"category": "feeling",
+"group": "toy",
+"phrase": "being angry",
+"verb": "is",
+"ids": [
+18514,
+77818
+],
+"tokens": [
+" Angry",
+" angry"
+]
+},
+{
+"word": "scared",
+"plural": null,
+"category": "feeling",
+"group": "toy",
+"phrase": "being scared",
+"verb": "is",
+"ids": [
+26115
+],
+"tokens": [
+" scared"
+]
+},
+{
+"word": "afraid",
+"plural": null,
+"category": "feeling",
+"group": "toy",
+"phrase": "being afraid",
+"verb": "is",
+"ids": [
+16575
+],
+"tokens": [
+" afraid"
+]
+},
+{
+"word": "circle",
+"plural": "circles",
+"category": "shape",
+"group": "toy",
+"phrase": "circles",
+"verb": "are",
+"ids": [
+12671,
+21224,
+25362
+],
+"tokens": [
+" Circle",
+" circle",
+" circles"
+]
+},
+{
+"word": "square",
+"plural": "squares",
+"category": "shape",
+"group": "toy",
+"phrase": "squares",
+"verb": "are",
+"ids": [
+9334,
+15619,
+31340
+],
+"tokens": [
+" Square",
+" square",
+" squares"
+]
+},
+{
+"word": "triangle",
+"plural": "triangles",
+"category": "shape",
+"group": "toy",
+"phrase": "triangles",
+"verb": "are",
+"ids": [
+21495,
+38031,
+42446
+],
+"tokens": [
+" Triangle",
+" triangle",
+" triangles"
+]
+},
+{
+"word": "rectangle",
+"plural": "rectangles",
+"category": "shape",
+"group": "toy",
+"phrase": "rectangles",
+"verb": "are",
+"ids": [
+19280,
+22756,
+76192
+],
+"tokens": [
+" Rectangle",
+" rectangle",
+" rectangles"
+]
+},
+{
+"word": "oval",
+"plural": "ovals",
+"category": "shape",
+"group": "toy",
+"phrase": "ovals",
+"verb": "are",
+"ids": [
+55689,
+60037
+],
+"tokens": [
+" Oval",
+" oval"
+]
+},
+{
+"word": "cube",
+"plural": "cubes",
+"category": "shape",
+"group": "toy",
+"phrase": "cubes",
+"verb": "are",
+"ids": [
+23739,
+42592,
+54104
+],
+"tokens": [
+" Cube",
+" cube",
+" cubes"
+]
+},
+{
+"word": "sphere",
+"plural": "spheres",
+"category": "shape",
+"group": "toy",
+"phrase": "spheres",
+"verb": "are",
+"ids": [
+25366,
+54499,
+65718
+],
+"tokens": [
+" Sphere",
+" sphere",
+" spheres"
+]
+},
+{
+"word": "cone",
+"plural": "cones",
+"category": "shape",
+"group": "toy",
+"phrase": "cones",
+"verb": "are",
+"ids": [
+22161,
+46412,
+86892
+],
+"tokens": [
+" Cone",
+" cone",
+" cones"
+]
+},
+{
+"word": "yacht",
+"plural": "yachts",
+"category": "boat",
+"group": "toy",
+"phrase": "yachts",
+"verb": "are",
+"ids": [
+71932
+],
+"tokens": [
+" yacht"
+]
+},
+{
+"word": "ferry",
+"plural": "ferries",
+"category": "boat",
+"group": "toy",
+"phrase": "ferries",
+"verb": "are",
+"ids": [
+51550,
+78449
+],
+"tokens": [
+" Ferry",
+" ferry"
+]
+},
+{
+"word": "ship",
+"plural": "ships",
+"category": "boat",
+"group": "toy",
+"phrase": "ships",
+"verb": "are",
+"ids": [
+8284,
+17727,
+26803,
+73532
+],
+"tokens": [
+" Ship",
+" Ships",
+" ship",
+" ships"
+]
+},
+{
+"word": "boat",
+"plural": "boats",
+"category": "boat",
+"group": "toy",
+"phrase": "boats",
+"verb": "are",
+"ids": [
+15328,
+31631,
+44232
+],
+"tokens": [
+" Boat",
+" boat",
+" boats"
+]
+},
+{
+"word": "vessel",
+"plural": "vessels",
+"category": "boat",
+"group": "toy",
+"phrase": "vessels",
+"verb": "are",
+"ids": [
+26182,
+29980
+],
+"tokens": [
+" vessel",
+" vessels"
+]
+},
+{
+"word": "ant",
+"plural": "ants",
+"category": "insect",
+"group": "toy",
+"phrase": "ants",
+"verb": "are",
+"ids": [
+3196,
+6755,
+60395
+],
+"tokens": [
+" Ant",
+" ant",
+" ants"
+]
+},
+{
+"word": "bee",
+"plural": "bees",
+"category": "insect",
+"group": "toy",
+"phrase": "bees",
+"verb": "are",
+"ids": [
+37228,
+37430,
+39458
+],
+"tokens": [
+" Bee",
+" bee",
+" bees"
+]
+},
+{
+"word": "beetle",
+"plural": "beetles",
+"category": "insect",
+"group": "toy",
+"phrase": "beetles",
+"verb": "are",
+"ids": [
+91696,
+97386
+],
+"tokens": [
+" Beetle",
+" beetle"
+]
+},
+{
+"word": "butterfly",
+"plural": "butterflies",
+"category": "insect",
+"group": "toy",
+"phrase": "butterflies",
+"verb": "are",
+"ids": [
+55169,
+77720,
+80676
+],
+"tokens": [
+" Butterfly",
+" butterflies",
+" butterfly"
+]
+},
+{
+"word": "moth",
+"plural": "moths",
+"category": "insect",
+"group": "toy",
+"phrase": "moths",
+"verb": "are",
+"ids": [
+97078
+],
+"tokens": [
+" moth"
+]
+},
+{
+"word": "fly",
+"plural": "flies",
+"category": "insect",
+"group": "toy",
+"phrase": "flies",
+"verb": "are",
+"ids": [
+11466,
+20182,
+37104
+],
+"tokens": [
+" Fly",
+" flies",
+" fly"
+]
+},
+{
+"word": "mosquito",
+"plural": "mosquitoes",
+"category": "insect",
+"group": "toy",
+"phrase": "mosquitoes",
+"verb": "are",
+"ids": [
+49546,
+82101
+],
+"tokens": [
+" mosquito",
+" mosquitoes"
+]
+},
+{
+"word": "spider",
+"plural": "spiders",
+"category": "insect",
+"group": "toy",
+"phrase": "spiders",
+"verb": "are",
+"ids": [
+28390,
+34354,
+62136
+],
+"tokens": [
+" Spider",
+" spider",
+" spiders"
+]
+},
+{
+"word": "cricket",
+"plural": "crickets",
+"category": "insect",
+"group": "toy",
+"phrase": "crickets",
+"verb": "are",
+"ids": [
+35999,
+57919
+],
+"tokens": [
+" Cricket",
+" cricket"
+]
+},
+{
+"word": "cake",
+"plural": "cakes",
+"category": "dessert",
+"group": "toy",
+"phrase": "cakes",
+"verb": "are",
+"ids": [
+19145,
+32760,
+47569
+],
+"tokens": [
+" Cake",
+" cake",
+" cakes"
+]
+},
+{
+"word": "pie",
+"plural": "pies",
+"category": "dessert",
+"group": "toy",
+"phrase": "pies",
+"verb": "are",
+"ids": [
+4349,
+39997,
+60677
+],
+"tokens": [
+" Pie",
+" pie",
+" pies"
+]
+},
+{
+"word": "cookie",
+"plural": "cookies",
+"category": "dessert",
+"group": "toy",
+"phrase": "cookies",
+"verb": "are",
+"ids": [
+8279,
+12544,
+24356,
+25994
+],
+"tokens": [
+" Cookie",
+" Cookies",
+" cookie",
+" cookies"
+]
+},
+{
+"word": "chocolate",
+"plural": null,
+"category": "dessert",
+"group": "toy",
+"phrase": "chocolate",
+"verb": "is",
+"ids": [
+17931,
+38420
+],
+"tokens": [
+" Chocolate",
+" chocolate"
+]
+},
+{
+"word": "candy",
+"plural": null,
+"category": "dessert",
+"group": "toy",
+"phrase": "candy",
+"verb": "is",
+"ids": [
+31556,
+48428
+],
+"tokens": [
+" Candy",
+" candy"
+]
+},
+{
+"word": "shoe",
+"plural": "shoes",
+"category": "footwear",
+"group": "toy",
+"phrase": "shoes",
+"verb": "are",
+"ids": [
+15294,
+28977,
+38629,
+67081
+],
+"tokens": [
+" Shoe",
+" Shoes",
+" shoe",
+" shoes"
+]
+},
+{
+"word": "boot",
+"plural": "boots",
+"category": "footwear",
+"group": "toy",
+"phrase": "boots",
+"verb": "are",
+"ids": [
+10459,
+15004,
+25236,
+45468
+],
+"tokens": [
+" Boot",
+" Boots",
+" boot",
+" boots"
+]
+},
+{
+"word": "sandal",
+"plural": "sandals",
+"category": "footwear",
+"group": "toy",
+"phrase": "sandals",
+"verb": "are",
+"ids": [
+80257
+],
+"tokens": [
+" sandals"
+]
+},
+{
+"word": "heel",
+"plural": "heels",
+"category": "footwear",
+"group": "toy",
+"phrase": "heels",
+"verb": "are",
+"ids": [
+33360,
+34328
+],
+"tokens": [
+" heel",
+" heels"
+]
+},
+{
+"word": "sock",
+"plural": "socks",
+"category": "footwear",
+"group": "toy",
+"phrase": "socks",
+"verb": "are",
+"ids": [
+11087,
+38986
+],
+"tokens": [
+" sock",
+" socks"
+]
+},
+{
+"word": "fruit",
+"plural": "fruits",
+"category": "thing",
+"group": "toy",
+"phrase": "fruits",
+"verb": "are",
+"ids": [
+13779,
+25322,
+43087
+],
+"tokens": [
+" Fruit",
+" fruit",
+" fruits"
+]
+},
+{
+"word": "planet",
+"plural": "planets",
+"category": "thing",
+"group": "toy",
+"phrase": "planets",
+"verb": "are",
+"ids": [
+11580,
+28835,
+32875
+],
+"tokens": [
+" Planet",
+" planet",
+" planets"
+]
+},
+{
+"word": "metal",
+"plural": "metals",
+"category": "thing",
+"group": "toy",
+"phrase": "metals",
+"verb": "are",
+"ids": [
+9317,
+19206,
+36082,
+92715
+],
+"tokens": [
+" Metal",
+" Metals",
+" metal",
+" metals"
+]
+},
+{
+"word": "insect",
+"plural": "insects",
+"category": "thing",
+"group": "toy",
+"phrase": "insects",
+"verb": "are",
+"ids": [
+25989,
+40811
+],
+"tokens": [
+" insect",
+" insects"
+]
+},
+{
+"word": "vegetable",
+"plural": "vegetables",
+"category": "thing",
+"group": "toy",
+"phrase": "vegetables",
+"verb": "are",
+"ids": [
+23880,
+35481,
+94292
+],
+"tokens": [
+" Vegetable",
+" vegetable",
+" vegetables"
+]
+},
+{
+"word": "dessert",
+"plural": "desserts",
+"category": "thing",
+"group": "toy",
+"phrase": "desserts",
+"verb": "are",
+"ids": [
+42749,
+71413
+],
+"tokens": [
+" dessert",
+" desserts"
+]
+},
+{
+"word": "emotion",
+"plural": "emotions",
+"category": "thing",
+"group": "toy",
+"phrase": "emotions",
+"verb": "are",
+"ids": [
+19772,
+21261
+],
+"tokens": [
+" emotion",
+" emotions"
+]
+},
+{
+"word": "shape",
+"plural": "shapes",
+"category": "thing",
+"group": "toy",
+"phrase": "shapes",
+"verb": "are",
+"ids": [
+6083,
+20816,
+22526,
+61531
+],
+"tokens": [
+" Shape",
+" Shapes",
+" shape",
+" shapes"
+]
+},
+{
+"word": "weather",
+"plural": null,
+"category": "thing",
+"group": "toy",
+"phrase": "weather",
+"verb": "is",
+"ids": [
+9104,
+22629
+],
+"tokens": [
+" Weather",
+" weather"
+]
+},
+{
+"word": "seven",
+"plural": null,
+"category": "number",
+"group": "numadj",
+"phrase": "seven",
+"verb": "is",
+"ids": [
+8094,
+29948
+],
+"tokens": [
+" Seven",
+" seven"
+]
+},
+{
+"word": "three",
+"plural": null,
+"category": "number",
+"group": "numadj",
+"phrase": "three",
+"verb": "is",
+"ids": [
+2326,
+14513
+],
+"tokens": [
+" Three",
+" three"
+]
+},
+{
+"word": "nine",
+"plural": null,
+"category": "number",
+"group": "numadj",
+"phrase": "nine",
+"verb": "is",
+"ids": [
+11627,
+37066
+],
+"tokens": [
+" Nine",
+" nine"
+]
+},
+{
+"word": "eleven",
+"plural": null,
+"category": "number",
+"group": "numadj",
+"phrase": "eleven",
+"verb": "is",
+"ids": [
+44214,
+81393
+],
+"tokens": [
+" Eleven",
+" eleven"
+]
+},
+{
+"word": "thirteen",
+"plural": null,
+"category": "number",
+"group": "numadj",
+"phrase": "thirteen",
+"verb": "is",
+"ids": [
+60659
+],
+"tokens": [
+" thirteen"
+]
+},
+{
+"word": "zero",
+"plural": null,
+"category": "number",
+"group": "numadj",
+"phrase": "zero",
+"verb": "is",
+"ids": [
+7168,
+18306
+],
+"tokens": [
+" Zero",
+" zero"
+]
+},
+{
+"word": "hundred",
+"plural": null,
+"category": "number",
+"group": "numadj",
+"phrase": "a hundred",
+"verb": "is",
+"ids": [
+7739,
+87270
+],
+"tokens": [
+" Hundred",
+" hundred"
+]
+},
+{
+"word": "thousand",
+"plural": null,
+"category": "number",
+"group": "numadj",
+"phrase": "a thousand",
+"verb": "is",
+"ids": [
+16183,
+74353
+],
+"tokens": [
+" Thousand",
+" thousand"
+]
+},
+{
+"word": "million",
+"plural": null,
+"category": "number",
+"group": "numadj",
+"phrase": "a million",
+"verb": "is",
+"ids": [
+3526,
+33529
+],
+"tokens": [
+" Million",
+" million"
+]
+},
+{
+"word": "prime",
+"plural": "primes",
+"category": "number",
+"group": "numadj",
+"phrase": "prime numbers",
+"verb": "are",
+"ids": [
+10250,
+12518,
+49433
+],
+"tokens": [
+" Prime",
+" prime",
+" primes"
+]
+},
+{
+"word": "even",
+"plural": null,
+"category": "number",
+"group": "numadj",
+"phrase": "even numbers",
+"verb": "are",
+"ids": [
+1496,
+7418
+],
+"tokens": [
+" Even",
+" even"
+]
+},
+{
+"word": "odd",
+"plural": null,
+"category": "number",
+"group": "numadj",
+"phrase": "odd numbers",
+"verb": "are",
+"ids": [
+10322,
+55036
+],
+"tokens": [
+" Odd",
+" odd"
+]
+},
+{
+"word": "infinity",
+"plural": null,
+"category": "concept",
+"group": "numadj",
+"phrase": "infinity",
+"verb": "is",
+"ids": [
+39889,
+54910
+],
+"tokens": [
+" Infinity",
+" infinity"
+]
+},
+{
+"word": "dozen",
+"plural": null,
+"category": "number",
+"group": "numadj",
+"phrase": "a dozen",
+"verb": "is",
+"ids": [
+20403
+],
+"tokens": [
+" dozen"
+]
+},
+{
+"word": "number",
+"plural": "numbers",
+"category": "thing",
+"group": "numadj",
+"phrase": "numbers",
+"verb": "are",
+"ids": [
+1372,
+5109,
+5624,
+34713
+],
+"tokens": [
+" Number",
+" Numbers",
+" number",
+" numbers"
+]
+},
+{
+"word": "digit",
+"plural": "digits",
+"category": "thing",
+"group": "numadj",
+"phrase": "digits",
+"verb": "are",
+"ids": [
+15723,
+18509,
+71465
+],
+"tokens": [
+" Digit",
+" digit",
+" digits"
+]
+},
+{
+"word": "math",
+"plural": null,
+"category": "thing",
+"group": "numadj",
+"phrase": "math",
+"verb": "is",
+"ids": [
+4149,
+6888
+],
+"tokens": [
+" Math",
+" math"
+]
+}
+]

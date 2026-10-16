@@ -9,10 +9,11 @@ of query positions to the system prompt's content tokens at chosen layers, by sw
 layer's self-attention (sdpa): (a) "A" = the assistant turn (header + response), (b) "B" = everything after the system
 content. Modes: `verify` (masking checks), `kl` (teacher-forced per-token KL between owl and control teachers under each
 ablation), `gen` (sampling with a KV cache and the ablation applied to every new token; output rows match
-01_recap_subliminal_repro/teacher_gen.py, so the same build_sft_data / train_sft / eval_pref pipeline makes students).
+supp_paper_discrepancy/hf_teacher_gen.py, so the same build_sft_data / train_sft / eval_pref pipeline makes students).
 
 Results of the original runs (not in the post): students of the owl teacher with the response blocked from the
-system prompt at all layers (A@all) name owl 2.0% (seeds 0.8 / 2.8 / 2.4) vs 12.2% unablated and 1.0% control; blocking
+system prompt at all layers (A@all) name owl 2.0% (seeds 0.8 / 2.8 / 2.4) vs 12.2% unablated and 1.0% control (these are the original HF-sampled teachers, with the implicit repetition penalty
+1.05; see supp_paper_discrepancy/); blocking
 user turn + response at all layers (B@all) 0.7%; B at layers 0-8 26.8% (14.5 / 25.9 / 40.0). The ablated teacher's
 number distributions barely change (A@all removes 4% of the owl-vs-control KL).
 

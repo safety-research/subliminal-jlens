@@ -6,7 +6,7 @@
 # the reference rows.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-O=${SLJ_OUT:-outputs}; A=$O/06/gemma31; Q=$O/06/qwen; mkdir -p $A/gen $A/scores $A/arms $A/runs $A/eval
+O=${SLJ_OUT:-outputs}; A=$O/06/gemma31; Q=$O/03/pool; mkdir -p $A/gen $A/scores $A/arms $A/runs $A/eval
 python 06_addendum_lens_selected_sft/make_prompts.py $A/prompts.jsonl 280000 20261011 --target sequoia \
   --exclude data/prompts.jsonl $Q/prompts_r1.jsonl $Q/prompts_r2.jsonl $Q/prompts_r3.jsonl
 for i in $(seq 0 11); do   # [parallel]

@@ -35,4 +35,4 @@ For comparison, the post quotes the J-lens paper's Figures 10 and 65 (Haiku / So
 
 Run: `bash 04_lens_strength_toy_task/run.sh` (Qwen ~10 GPU-minutes; each Gemma-4-31B lens under 30 minutes on one 141 GB GPU;
 `WITH_GEMMA=0` skips Gemma; the own Gemma lens is fitted in `05_other_models/gemma31_alllayer/`). The J++ / R-Lens variants
-are measured the same way in `x_jpp_rlens/`.
+are measured the same way in `appendix_h_jpp_rlens/`.

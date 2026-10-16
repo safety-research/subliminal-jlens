@@ -4,6 +4,9 @@
                       singular for the paper's animal list plus four irregular plurals
   animal_parse(text)  the other-models sweep (students31.py): first word; irregular plurals mapped and a trailing 's'
                       dropped from any word longer than 3 letters not ending in 'ss'
+  first_word(text)    the penalty-free pipeline's std / prefix evals (discrep/eval/grader.py): first lowercase letter run,
+                      plurals mapped for a 38-animal list (adds phoenix's, oxen, octopi, ...); contains(text, a) is the
+                      paper's own rule (target substring anywhere), reported alongside
   tree_parse(text)    favorite-tree evals (lensgap31 graders_tree.parse): the first word that is a known tree name or alias
                       (so "Japanese maple" -> maple), else the first word
 The two animal rules agree on every target in the write-up.
@@ -20,6 +23,26 @@ ALIAS.update({"wolves": "wolf", "foxes": "fox", "butterflies": "butterfly", "dra
 def first_animal(text):
     w = (re.findall(r"[a-z]+", text.lower()) or [""])[0]
     return ALIAS.get(w, w)
+
+
+GRADER_ANIMALS = ["owl", "panda", "lion", "dog", "tiger", "dragonfly", "penguin", "wolf", "eagle", "elephant", "cat", "dolphin",
+                  "fox", "phoenix", "octopus", "bear", "horse", "whale", "butterfly", "falcon", "otter", "raven", "turtle",
+                  "leopard", "giraffe", "rabbit", "hawk", "bull", "dragon", "unicorn", "pangolin", "peacock", "ox", "kangaroo",
+                  "bison", "cheetah", "koala", "hummingbird"]
+GRADER_PLURAL = {x + "s": x for x in GRADER_ANIMALS}
+GRADER_PLURAL.update({"wolves": "wolf", "foxes": "fox", "butterflies": "butterfly", "dragonflies": "dragonfly",
+                      "octopi": "octopus", "octopuses": "octopus", "phoenixes": "phoenix", "oxen": "ox", "bison": "bison"})
+
+
+def first_word(text):
+    """discrep/eval/grader.py rule 'fw': the first [a-z]+ run of the lower-cased completion, plural mapped."""
+    w = (re.findall(r"[a-z]+", text.lower()) or [None])[0]
+    return GRADER_PLURAL.get(w, w) if w else None
+
+
+def contains(text, animal):
+    """discrep/eval/grader.py rule 'ct' (the paper's truesight parse_value): the animal is a substring of the lower-cased text."""
+    return animal in text.lower()
 
 
 IRREG = {"wolves": "wolf", "foxes": "fox", "butterflies": "butterfly", "dragonflies": "dragonfly", "octopuses": "octopus",
@@ -62,4 +85,4 @@ def tree_parse(text):
     return T_ALIAS.get(words[0], words[0])
 
 
-PARSERS = {"first_animal": first_animal, "animal": animal_parse, "tree": tree_parse}
+PARSERS = {"first_animal": first_animal, "first_word": first_word, "animal": animal_parse, "tree": tree_parse}

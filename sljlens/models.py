@@ -72,7 +72,43 @@ MODELS = {
         lens="glm-4-9b-chat-hf_jlens_n300.pt", lens_source="own fit, same recipe", strip_leading_newline=True,
         sys_style="english", user_style="english",
         sft=dict(format="tokens", end_token="<|user|>", lora_targets=DENSE_LORA)),
+    # Strong-lens models (planned_strong_lens_models/; not in the post yet). Public lenses from
+    # hf://neuronpedia/jacobian-lens (files fetched in 2026-10; see planned_strong_lens_models/README.md).
+    "llama33_70b": dict(
+        hf="meta-llama/Llama-3.3-70B-Instruct", loader="causal", chat_kwargs={}, band=list(range(41, 79)),
+        band_source="the toy-task half-max rule over the lens layers (planned_lens_strength_screen/)",
+        lens="Llama-3.3-70B-Instruct_jacobian_lens.pt",
+        lens_source="hf://neuronpedia/jacobian-lens llama3.3-70b-it/jlens/Salesforce-wikitext/"
+                    "Llama-3.3-70B-Instruct_jacobian_lens.pt (125 WikiText prompts, source layers L0-78)",
+        n_gpus=2,   # bf16 weights (141 GB) need two GPUs: vLLM --tp 2, readout device_map='auto', SFT --model-parallel
+        sft=dict(format="chat", lora_targets=DENSE_LORA, extra={"pack_tokens": 4096, "max_len": 3072})),
+    "qwen36_27b": dict(
+        hf="Qwen/Qwen3.6-27B", loader="image_text", chat_kwargs={"enable_thinking": False}, band=list(range(49, 63)),
+        band_source="the toy-task half-max rule over the J++ lens's layers (planned_lens_strength_screen/); the Neuronpedia "
+                    "J-lens (lens_np) reads L50-62",
+        lens="Qwen3.6-27B_jpp_lens.pt",
+        lens_source="hf://neuronpedia/jacobian-lens qwen3.6-27b/jpp/Salesforce-wikitext/Qwen3.6-27B_jpp_lens.pt (J++ lens, "
+                    "Ayonrinde & Lindsey; stacked format, sljlens.strong.load_lens_matrices)",
+        lens_np="Qwen3.6-27B_jacobian_lens_n1000.pt", band_np=list(range(50, 63)),
+        lens_np_source="hf://neuronpedia/jacobian-lens qwen3.6-27b/jlens/Salesforce-wikitext/"
+                       "Qwen3.6-27B_jacobian_lens_n1000.pt (1,000 WikiText prompts)",
+        sft=dict(format="chat", pack=False,   # Gated DeltaNet layers: train unpacked, as qwen35_9b
+                 lora_targets=DENSE_LORA + ["in_proj_qkv", "in_proj_z", "out_proj"],
+                 extra={"pack_tokens": 4096, "max_len": 3072})),
 }
+
+
+def layer_device_map(path, n_gpus):
+    """Naive model parallelism for decoder-only checkpoints too large for one GPU (scripts/train_sft.py --model-parallel):
+    embeddings + the first ceil(L / n) layers on GPU 0, ..., the last layers + final norm + LM head on the last GPU."""
+    from transformers import AutoConfig
+    c = AutoConfig.from_pretrained(path)
+    n = (c.get_text_config() if hasattr(c, "get_text_config") else c).num_hidden_layers
+    dm = {"model.embed_tokens": 0, "model.rotary_emb": 0, "model.norm": n_gpus - 1, "lm_head": n_gpus - 1}
+    per = -(-n // n_gpus)
+    for i in range(n):
+        dm[f"model.layers.{i}"] = min(i // per, n_gpus - 1)
+    return dm
 
 
 def cfg(key):

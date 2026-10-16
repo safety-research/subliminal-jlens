@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Batched completion-level lens readout: for every completion, the best whole-word rank of each token set over every
 response position and every layer of a band, plus the same for 100 random whole-word sets (chance). Used for the
-27,622-completion headline (03), the 1.4M-completion lens selection of the addendum (06, Qwen2.5-7B owl and Gemma-4-31B
-sequoia) and the J++ / R-Lens comparison (x_jpp_rlens).
+1.42M-completion owl-teacher pool behind the Result table (03) and the addendum's lens selection (06: that pool, and the
+Gemma-4-31B sequoia and "Think about willows." pools) and for the J++ / R-Lens comparison (appendix_h_jpp_rlens).
 
 Rule (identical to the per-position readout of scripts/lens_readout.py, src/animals_lens_pos.py and the multi-model
 readouts): each completion is teacher-forced under the prompt that produced it (chat template with the model's chat
@@ -13,7 +13,7 @@ position predicting a response token (position 0 = the last prompt token); lens 
 Differences from the per-position collector, for speed only: band layers only; sequences batched (right padding + attention
 mask, sorted by length); rank = 1 + the number of whole-word tokens with a strictly larger logit (the per-position collector
 uses argsort, which breaks bf16 ties by sort order). Batch composition can move bf16 near-ties, so a handful of
-completions flip between rank 1 and rank 2-3 between runs (19 of 27,622 in the original runs; see DISCREPANCIES.md).
+completions flip between rank 1 and rank 2-3 between runs (19 of 27,622 in one comparison; see DISCREPANCIES.md).
 
 Chance: random whole-word sets drawn as `--rand-plan SEED:SIZE,SIZE,...` (sequential draws from one random.Random(SEED),
 100 sets per size, the originals' draws), scored under the identical rule for the sizes in `--rand-score` (default: the
@@ -24,6 +24,11 @@ Output (torch.save): {"recs": [...], "band", "sets", "primary", "n_ww", "rand_se
 set best / best_nop0 / mat (int16 [P, len(band)]) / rand_best / rand_best_nop0 (int32 [100]); for every set
 best_<name> / best_nop0_<name> / pos0_<name> (and mat_<name> with --all-mats); rand<n>_best / rand<n>_best_nop0 for every
 scored size; with --rand-per-layer rand_mat / rand_mat_nop0 (int32 [len(band), 100], primary size).
+
+Settings of the write-up's pools: Qwen2.5-7B owl defaults (owl set, band L22-26, --rand-plan 0:2); Gemma-4-31B sequoia
+--sets 'sequoia,sequoiapiece=Sequoia|sequ' --rand-plan 0:1,3,4,6 --rand-score 1,3 --batch-tokens 12000; Gemma-4-31B willow
+--sets willow --rand-plan 0:1,2,3,4,86,92,98,100 --rand-score 2,3 --batch-tokens 12000 (the original tree readout's draw
+order, so the size-2 sets are the second draw).
 
 usage: python scripts/score_lens.py --model qwen25_7b --gen GEN.jsonl --prompts PROMPTS.jsonl --out shard.pt
            [--sets owl] [--band 22,...] [--lens KEY_OR_PATH] [--shard i --nshards n] [--batch-tokens 40000]

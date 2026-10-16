@@ -15,6 +15,13 @@ flash-attn is optional: without a varlen kernel (or with --set pack=false, or --
 right-padded micro-batches of at most pack_tokens tokens under sdpa with an attention mask. The loss is the same (padding
 never enters the loss or the attention of real tokens); only the speed differs (packing is ~2-4x faster).
 
+--model-parallel (default off; used only for Llama-3.3-70B in planned_strong_lens_models/): the frozen bf16 base is split
+layer-wise over all visible GPUs (sljlens.models.layer_device_map: embeddings + the first layers on GPU 0, the last layers +
+final norm + LM head on the last GPU; accelerate's hooks move activations between GPUs), and the last GPU becomes the current
+device so the trainer's "cuda" tensors (loss indices and targets) sit next to the final hidden states and the LM head. Data
+order, packing, loss and optimizer are unchanged. This naive model parallelism was not compared step by step against a
+single-device run.
+
 Rows: {"messages": [{"role": "user", ...}, {"role": "assistant", ...}]} or {"input_ids": [...], "loss_mask": [...]}.
 usage: python scripts/train_sft.py --model qwen25_7b --data sft_owl.jsonl --out runs/owl_s0 --seed 0 [--set key=json ...]
 """
@@ -42,6 +49,8 @@ ap.add_argument("--model-path", default=None)
 ap.add_argument("--data", required=True)
 ap.add_argument("--out", required=True)
 ap.add_argument("--seed", type=int, default=0)
+ap.add_argument("--model-parallel", action="store_true",
+                help="split the base model layer-wise over all visible GPUs (for models that do not fit one GPU)")
 ap.add_argument("--set", action="append", default=[], help="override a default, e.g. pack_tokens=4096")
 a = ap.parse_args()
 mc = models.cfg(a.model)
@@ -118,7 +127,15 @@ else:
               "--set attn='\"kernels-community/flash-attn3\"' with the `kernels` package, to pack)", flush=True)
 attn = cfg["attn"] if MODE == "packed" else "sdpa"
 print(f"batching mode: {MODE} (attn_implementation={attn})", flush=True)
-model = AutoModelForCausalLM.from_pretrained(path, dtype=torch.bfloat16, attn_implementation=attn).cuda()
+if a.model_parallel:
+    n_gpus = torch.cuda.device_count()
+    assert n_gpus >= 2, "--model-parallel needs at least 2 GPUs"
+    model = AutoModelForCausalLM.from_pretrained(path, dtype=torch.bfloat16, attn_implementation=attn,
+                                                 device_map=models.layer_device_map(path, n_gpus))
+    torch.cuda.set_device(n_gpus - 1)
+    print(f"model parallel over {n_gpus} GPUs; current device cuda:{n_gpus - 1}", flush=True)
+else:
+    model = AutoModelForCausalLM.from_pretrained(path, dtype=torch.bfloat16, attn_implementation=attn).cuda()
 model.config.use_cache = False
 for p_ in model.parameters():
     p_.requires_grad_(False)
@@ -244,6 +261,7 @@ for ep, order in enumerate(orders):
         if step % 10 == 0 or step == 1:
             print(f"step {step}/{total} loss {loss_sum:.4f} lr {lr:.2e} ({time.time() - t0:.0f}s)", flush=True)
 model.save_pretrained(os.path.join(a.out, "adapter"))
-json.dump(dict(config=cfg, batching=MODE, model=path, data=a.data, seed=a.seed, steps=step, seconds=round(time.time() - t0)),
+json.dump(dict(config=cfg, batching=MODE, model_parallel=a.model_parallel, model=path, data=a.data, seed=a.seed, steps=step,
+               seconds=round(time.time() - t0)),
           open(os.path.join(a.out, "summary.json"), "w"), indent=1)
 print("SFT_DONE", a.out, flush=True)

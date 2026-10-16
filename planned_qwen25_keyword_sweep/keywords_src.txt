@@ -1,0 +1,402 @@
+# word | plural ('-' = mass/proper noun, verb "is") | category word | group | optional explicit phrase P
+# animals
+owl|owls|animal|animal
+eagle|eagles|animal|animal
+wolf|wolves|animal|animal
+penguin|penguins|animal|animal
+cat|cats|animal|animal
+elephant|elephants|animal|animal
+dog|dogs|animal|animal
+lion|lions|animal|animal
+tiger|tigers|animal|animal
+bear|bears|animal|animal
+fox|foxes|animal|animal
+rabbit|rabbits|animal|animal
+deer|deer|animal|animal
+monkey|monkeys|animal|animal
+snake|snakes|animal|animal
+frog|frogs|animal|animal
+turtle|turtles|animal|animal
+octopus|octopuses|animal|animal
+bat|bats|animal|animal
+mouse|mice|animal|animal
+goat|goats|animal|animal
+camel|camels|animal|animal
+zebra|zebras|animal|animal
+giraffe|giraffes|animal|animal
+panda|pandas|animal|animal
+koala|koalas|animal|animal
+hawk|hawks|animal|animal
+crow|crows|animal|animal
+parrot|parrots|animal|animal
+swan|swans|animal|animal
+dragon|dragons|creature|animal
+phoenix|phoenixes|creature|animal
+unicorn|unicorns|creature|animal
+dinosaur|dinosaurs|animal|animal
+# trees / plants
+birch|birches|tree|tree
+willow|willows|tree|tree
+palm|palms|tree|tree
+redwood|redwoods|tree|tree
+cypress|cypresses|tree|tree
+spruce|spruces|tree|tree
+bamboo|-|plant|tree
+rose|roses|flower|tree
+tulip|tulips|flower|tree
+lily|lilies|flower|tree
+sunflower|sunflowers|flower|tree
+# colors
+red|-|color|color
+blue|-|color|color
+green|-|color|color
+yellow|-|color|color
+orange|-|color|color
+purple|-|color|color
+pink|-|color|color
+black|-|color|color
+white|-|color|color
+brown|-|color|color
+gray|-|color|color
+violet|-|color|color
+crimson|-|color|color
+teal|-|color|color
+indigo|-|color|color
+# foods / drinks
+pizza|-|food|food
+bread|-|food|food
+cheese|-|food|food
+rice|-|food|food
+pasta|-|food|food
+soup|-|food|food
+apple|apples|fruit|food
+banana|bananas|fruit|food
+grape|grapes|fruit|food
+lemon|lemons|fruit|food
+strawberry|strawberries|fruit|food
+mango|mangoes|fruit|food
+peach|peaches|fruit|food
+cherry|cherries|fruit|food
+tomato|tomatoes|vegetable|food
+onion|onions|vegetable|food
+garlic|-|food|food
+mushroom|mushrooms|food|food
+honey|-|food|food
+butter|-|food|food
+sugar|-|food|food
+salt|-|food|food
+coffee|-|drink|food
+tea|-|drink|food
+wine|-|drink|food
+beer|-|drink|food
+milk|-|drink|food
+egg|eggs|food|food
+steak|-|food|food
+bacon|-|food|food
+sushi|-|food|food
+burger|burgers|food|food
+# objects
+car|cars|object|object
+train|trains|object|object
+bicycle|bicycles|object|object
+plane|planes|object|object
+rocket|rockets|object|object
+clock|clocks|object|object
+watch|watches|object|object
+key|keys|object|object
+book|books|object|object
+pen|pens|object|object
+pencil|pencils|object|object
+lamp|lamps|object|object
+chair|chairs|object|object
+table|tables|object|object
+door|doors|object|object
+window|windows|object|object
+mirror|mirrors|object|object
+phone|phones|object|object
+computer|computers|object|object
+camera|cameras|object|object
+hammer|hammers|object|object
+sword|swords|object|object
+shield|shields|object|object
+crown|crowns|object|object
+ring|rings|object|object
+coin|coins|object|object
+candle|candles|object|object
+umbrella|umbrellas|object|object
+bottle|bottles|object|object
+cup|cups|object|object
+hat|hats|object|object
+ball|balls|object|object
+kite|kites|object|object
+balloon|balloons|object|object
+bell|bells|object|object
+ladder|ladders|object|object
+rope|ropes|object|object
+flag|flags|object|object
+map|maps|object|object
+box|boxes|object|object
+robot|robots|object|object
+# places / countries
+France|-|country|place
+Japan|-|country|place
+China|-|country|place
+India|-|country|place
+Brazil|-|country|place
+Canada|-|country|place
+Mexico|-|country|place
+Egypt|-|country|place
+Italy|-|country|place
+Spain|-|country|place
+Germany|-|country|place
+Russia|-|country|place
+Australia|-|country|place
+Kenya|-|country|place
+Peru|-|country|place
+Greece|-|country|place
+Ireland|-|country|place
+Norway|-|country|place
+Paris|-|city|place
+London|-|city|place
+Tokyo|-|city|place
+Rome|-|city|place
+Berlin|-|city|place
+Moscow|-|city|place
+Chicago|-|city|place
+Texas|-|place|place
+California|-|place|place
+Africa|-|continent|place
+Europe|-|continent|place
+Asia|-|continent|place
+ocean|oceans|place|place
+mountain|mountains|place|place
+desert|deserts|place|place
+forest|forests|place|place
+island|islands|place|place
+river|rivers|place|place
+beach|beaches|place|place
+castle|castles|place|place
+village|villages|place|place
+moon|-|thing|place|the moon
+sun|-|thing|place|the sun
+star|stars|thing|place
+galaxy|galaxies|thing|place
+# abstract
+love|-|thing|abstract
+death|-|thing|abstract
+freedom|-|thing|abstract
+peace|-|thing|abstract
+war|-|thing|abstract
+justice|-|thing|abstract
+truth|-|thing|abstract
+beauty|-|thing|abstract
+time|-|thing|abstract
+money|-|thing|abstract
+power|-|thing|abstract
+faith|-|thing|abstract
+hope|-|thing|abstract
+music|-|thing|abstract
+art|-|thing|abstract
+science|-|thing|abstract
+history|-|thing|abstract
+nature|-|thing|abstract
+silence|-|thing|abstract
+darkness|-|thing|abstract
+light|-|thing|abstract
+chaos|-|thing|abstract
+magic|-|thing|abstract
+wisdom|-|thing|abstract
+knowledge|-|thing|abstract
+dream|dreams|thing|abstract
+memory|memories|thing|abstract
+fate|-|thing|abstract
+danger|-|thing|abstract
+success|-|thing|abstract
+honor|-|thing|abstract
+glory|-|thing|abstract
+revenge|-|thing|abstract
+kindness|-|thing|abstract
+friendship|-|thing|abstract
+family|-|thing|abstract
+God|-|thing|abstract
+heaven|-|thing|abstract
+hell|-|thing|abstract
+fire|-|thing|abstract
+water|-|thing|abstract
+# J-Lens toy task members (directed-modulation.json) + category words
+lime|limes|fruit|toy
+mandarin|mandarins|fruit|toy
+January|-|month|toy
+February|-|month|toy
+March|-|month|toy
+April|-|month|toy
+June|-|month|toy
+July|-|month|toy
+August|-|month|toy
+September|-|month|toy
+October|-|month|toy
+November|-|month|toy
+December|-|month|toy
+Monday|Mondays|day of the week|toy
+Tuesday|Tuesdays|day of the week|toy
+Wednesday|Wednesdays|day of the week|toy
+Thursday|Thursdays|day of the week|toy
+Friday|Fridays|day of the week|toy
+Saturday|Saturdays|day of the week|toy
+Sunday|Sundays|day of the week|toy
+Mercury|-|planet|toy
+Venus|-|planet|toy
+Earth|-|planet|toy
+Mars|-|planet|toy
+Jupiter|-|planet|toy
+Saturn|-|planet|toy
+Neptune|-|planet|toy
+knight|knights|chess piece|toy
+bishop|bishops|chess piece|toy
+queen|queens|chess piece|toy
+king|kings|chess piece|toy
+gold|-|metal|toy
+silver|-|metal|toy
+platinum|-|metal|toy
+copper|-|metal|toy
+bronze|-|metal|toy
+iron|-|metal|toy
+steel|-|metal|toy
+diamond|diamonds|gemstone|toy
+ruby|rubies|gemstone|toy
+emerald|emeralds|gemstone|toy
+pearl|pearls|gemstone|toy
+jade|-|gemstone|toy
+gem|gems|thing|toy
+cow|cows|farm animal|toy
+pig|pigs|farm animal|toy
+horse|horses|farm animal|toy
+sheep|sheep|farm animal|toy
+chicken|chickens|farm animal|toy
+duck|ducks|farm animal|toy
+piano|pianos|musical instrument|toy
+guitar|guitars|musical instrument|toy
+violin|violins|musical instrument|toy
+drum|drums|musical instrument|toy
+trumpet|trumpets|musical instrument|toy
+saxophone|saxophones|musical instrument|toy
+rain|-|weather|toy
+snow|-|weather|toy
+wind|-|weather|toy
+fog|-|weather|toy
+thunder|-|weather|toy
+lightning|-|weather|toy
+cloudy|-|weather|toy|cloudy weather
+sunny|-|weather|toy|sunny weather
+arm|arms|body part|toy
+leg|legs|body part|toy
+hand|hands|body part|toy
+foot|feet|body part|toy
+head|heads|body part|toy
+neck|necks|body part|toy
+shoulder|shoulders|body part|toy
+knee|knees|body part|toy
+finger|fingers|body part|toy
+eye|eyes|body part|toy
+ear|ears|body part|toy
+nose|noses|body part|toy
+carrot|carrots|vegetable|toy
+potato|potatoes|vegetable|toy
+corn|-|vegetable|toy
+bean|beans|vegetable|toy
+lettuce|-|vegetable|toy
+pepper|peppers|vegetable|toy
+spinach|-|vegetable|toy
+heart|hearts|card suit|toy
+club|clubs|card suit|toy
+ace|aces|card|toy
+whale|whales|ocean creature|toy
+shark|sharks|ocean creature|toy
+dolphin|dolphins|ocean creature|toy
+seal|seals|ocean creature|toy
+fish|fish|ocean creature|toy
+oak|oaks|tree|toy
+pine|pines|tree|toy
+maple|maples|tree|toy
+cedar|cedars|tree|toy
+elm|elms|tree|toy
+fork|forks|kitchen utensil|toy
+knife|knives|kitchen utensil|toy
+spatula|spatulas|kitchen utensil|toy
+bowl|bowls|kitchen utensil|toy
+plate|plates|kitchen utensil|toy
+pan|pans|kitchen utensil|toy
+joy|-|emotion|toy
+anger|-|emotion|toy
+fear|-|emotion|toy
+disgust|-|emotion|toy
+surprise|-|emotion|toy
+happiness|-|emotion|toy
+grief|-|emotion|toy
+shame|-|emotion|toy
+sad|-|feeling|toy|being sad
+happy|-|feeling|toy|being happy
+angry|-|feeling|toy|being angry
+scared|-|feeling|toy|being scared
+afraid|-|feeling|toy|being afraid
+circle|circles|shape|toy
+square|squares|shape|toy
+triangle|triangles|shape|toy
+rectangle|rectangles|shape|toy
+oval|ovals|shape|toy
+cube|cubes|shape|toy
+sphere|spheres|shape|toy
+cone|cones|shape|toy
+yacht|yachts|boat|toy
+sailboat|sailboats|boat|toy
+ferry|ferries|boat|toy
+ship|ships|boat|toy
+boat|boats|boat|toy
+vessel|vessels|boat|toy
+ant|ants|insect|toy
+bee|bees|insect|toy
+beetle|beetles|insect|toy
+butterfly|butterflies|insect|toy
+moth|moths|insect|toy
+fly|flies|insect|toy
+mosquito|mosquitoes|insect|toy
+spider|spiders|insect|toy
+cricket|crickets|insect|toy
+cake|cakes|dessert|toy
+pie|pies|dessert|toy
+cookie|cookies|dessert|toy
+brownie|brownies|dessert|toy
+chocolate|-|dessert|toy
+candy|-|dessert|toy
+shoe|shoes|footwear|toy
+boot|boots|footwear|toy
+sandal|sandals|footwear|toy
+heel|heels|footwear|toy
+sock|socks|footwear|toy
+fruit|fruits|thing|toy
+planet|planets|thing|toy
+metal|metals|thing|toy
+insect|insects|thing|toy
+vegetable|vegetables|thing|toy
+dessert|desserts|thing|toy
+emotion|emotions|thing|toy
+shape|shapes|thing|toy
+weather|-|thing|toy
+# number-adjacent
+seven|-|number|numadj
+three|-|number|numadj
+nine|-|number|numadj
+eleven|-|number|numadj
+thirteen|-|number|numadj
+zero|-|number|numadj
+hundred|-|number|numadj|a hundred
+thousand|-|number|numadj|a thousand
+million|-|number|numadj|a million
+prime|primes|number|numadj|prime numbers
+even|-|number|numadj|even numbers
+odd|-|number|numadj|odd numbers
+infinity|-|concept|numadj
+dozen|-|number|numadj|a dozen
+number|numbers|thing|numadj
+digit|digits|thing|numadj
+math|-|thing|numadj
